@@ -1,0 +1,47 @@
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-left: 10px;
+  color: #032d60;
+
+}
+
+ul p {
+  font-weight: 700;
+  color: #032d60;
+}
+
+.contato p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 400;
+  text-transform: underline;
+  font-size: 14px;
+  color: rgb(3, 45, 96);
+}
+
+.contato p+p {
+  margin-top: 5px;
+}
+
+@media(min-width:375px) {
+  nav {
+    position: absolute;
+    top: 0;
+    left: -220%;
+  }
+}
+
+@media (min-width:1200px) {
+  nav {
+    position: relative;
+    left: 0;
+  }
+}

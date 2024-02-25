@@ -1,0 +1,52 @@
+.icones {
+  display: flex;
+  gap: 30px;
+}
+
+.icones img {
+  width: 18px;
+}
+
+.user {
+  display: flex;
+  gap: 6px;
+}
+
+.user p {
+  color: #032d60;
+  font-weight: 700;
+}
+
+@media(min-width:375px) {
+  .icones {
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: end;
+  }
+
+
+  .user p {
+    display: none;
+  }
+
+  .globe {
+    display: none;
+  }
+}
+
+@media(min-width:1200px) {
+  .icones {
+    gap: 20px;
+    flex-grow: 0;
+    justify-content: center;
+  }
+
+  .user p {
+    display: block;
+  }
+
+  .globe {
+    display: block;
+  }
+
+}

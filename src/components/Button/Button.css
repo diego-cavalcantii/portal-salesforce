@@ -1,0 +1,23 @@
+.button {
+  background-color: #2E844A;
+  color: #FFF;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+@media(min-width:375px) {
+  button {
+    font-size: 14px;
+    padding: 8px 15px;
+    line-height: 16.1px;
+  }
+}
+
+@media(min-width:1200px) {
+  button {
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+  }
+}
