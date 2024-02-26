@@ -7,6 +7,6 @@ interface ButtonProps {
 
 export const Button = ({ children }: ButtonProps) => {
   return (
-    <button className="button">{children}</button>
+    <a href="#" className="button">{children}</a>
   )
 }

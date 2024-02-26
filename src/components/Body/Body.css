@@ -1,5 +1,22 @@
 .container {
-  padding: 64px 128px;
   display: flex;
   margin: 0 auto;
+}
+
+@media(min-width:375px){
+  .container{
+    padding: 48px 30px;
+  }
+}
+
+@media(min-width:768px){
+  .container{
+    padding: 64px 80px;
+  }
+}
+
+@media(min-width:1200px){
+  .container{
+  padding: 50px 80px;
+  }
 }
