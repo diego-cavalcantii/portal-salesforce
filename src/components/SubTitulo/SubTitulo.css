@@ -1,0 +1,25 @@
+.subtitulo {
+  color: rgb(3 45 96);
+  font-family: "Mitr", sans-serif;
+  letter-spacing: -0.08px;
+  padding: 0 28px;
+}
+@media(min-width:375px){
+  .subtitulo {
+    font-size: 20px;
+  }
+}
+
+@media(min-width:768px) {
+  .subtitulo {
+    font-size: 18px;
+    line-height: 24px;
+    overflow-y: hidden;
+  }
+}
+
+@media(min-width:1200px){
+  .subtitulo {
+    font-size: 28px;
+  }
+}

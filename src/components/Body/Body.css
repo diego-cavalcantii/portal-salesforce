@@ -1,6 +1,8 @@
 .container {
   display: flex;
   margin: 0 auto;
+  flex-direction: column;
+  gap: 70px;
 }
 
 @media(min-width:375px){

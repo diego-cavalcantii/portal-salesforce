@@ -1,0 +1,22 @@
+.artigo {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width:375px) {
+  .artigo {
+    flex-direction: column;
+  }
+}
+
+@media(min-width:768px){
+  .artigo {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px){
+  .artigo {
+    flex-direction: row;
+  }
+}

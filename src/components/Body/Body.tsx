@@ -1,11 +1,13 @@
 import "./Body.css";
+import { SectionAdver } from "../Section/SectionAdver/SectionAdver";
+import { NovoSalesforce } from "../Section/NovoSalesforce/NovoSalesforce";
 
-interface BodyProps {
-  children?: React.ReactNode;
-}
 
-export const Body = ({ children }: BodyProps) => {
+export const Body = () => {
   return (
-    <body className="container">{children}</body>
+    <body className="container">
+      <SectionAdver/>
+      <NovoSalesforce/>
+    </body>
   )
 }

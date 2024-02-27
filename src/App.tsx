@@ -1,7 +1,6 @@
 import './App.css'
 import { Header } from './components/Header/Header';
 import { Body } from "./components/Body/Body";
-import { SectionAdver } from './components/Section/SectionAdver/SectionAdver';
 
 interface AppContainerProps {
   children?: React.ReactNode;
@@ -18,10 +17,7 @@ function App() {
   return (
     <AppContainer>
       <Header />
-      <Body>
-        <SectionAdver />
-      </Body>
-
+      <Body/>
     </AppContainer>
   )
 }
