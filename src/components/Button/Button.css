@@ -1,22 +1,53 @@
 .button {
-  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
+}
+
+.green {
   background-color: #2E844A;
   padding: 8px 24px;
   color: white;
-  border-radius: 4px;
-  font-weight: 700;
+}
+
+.blue {
+  background-color: rgb(1 118 211);
+  color: white;
+}
+
+.white-blue{
+  border: 2px solid rgb(1 118 211);
+  background-color: white;
+  color: rgb(1 118 211);
 }
 
 @media(min-width:375px) {
-  .button {
+  .green {
+    padding: 8px 16px;
     font-size: 14px;
-    padding: 6px 15px;
+  }
+  .blue, .white-blue {
+    padding: 18px 0;
+    font-size: 16px;
+  }
+}
+
+@media(min-width:768px){
+  .blue, .white-blue {
+    padding: 16px 42px;
+    font-size: 16px;
   }
 }
 
 @media(min-width:1200px) {
-  .button {
-    padding: 8px 24px;
+  .green {
+    padding: 12px 26px;
+    font-size: 16px;
+  }
+  .blue, .white-blue {
+    padding: 16px 42px;
+    font-size: 16px;
   }
 } 
 

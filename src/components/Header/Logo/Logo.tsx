@@ -1,5 +1,5 @@
 import "./Logo.css";
-import imgLogo from "../../../img/salesforce-logo.png";
+import imgLogo from "../../../assets/salesforce-logo.png";
 
 export const Logo = () => {
   return (

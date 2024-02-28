@@ -1,25 +1,13 @@
-import './App.css'
-import { Header } from './components/Header/Header';
-import { Body } from "./components/Body/Body";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Home from "./pages/Home/Homes";
 
-interface AppContainerProps {
-  children?: React.ReactNode;
-}
-
-export const AppContainer = ({ children }: AppContainerProps) => {
-  return (
-    <div className='app-container'>{children}</div>
-  )
-}
-
-function App() {
+export default function App() {
 
   return (
-    <AppContainer>
-      <Header />
-      <Body/>
-    </AppContainer>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
-
-export default App

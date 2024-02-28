@@ -1,7 +1,7 @@
 import "./Icons.css";
-import globe from "../../../img/globe.svg";
-import user from "../../../img/user.svg";
-import lupa from "../../../img/lupa.svg";
+import globe from "../../../assets/globe.svg";
+import user from "../../../assets/user.svg";
+import lupa from "../../../assets/lupa.svg";
 
 
 

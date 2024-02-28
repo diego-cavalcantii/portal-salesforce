@@ -2,11 +2,12 @@ import "./Button.css";
 
 interface ButtonProps {
   children?: React.ReactNode;
+  variant ?: string
 }
 
 
-export const Button = ({ children }: ButtonProps) => {
+export const Button = ({ children,variant }: ButtonProps) => {
   return (
-    <a href="#" className="button">{children}</a>
+    <button className={`button ${variant}`}>{children}</button>
   )
 }

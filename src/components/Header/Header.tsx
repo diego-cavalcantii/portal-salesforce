@@ -3,7 +3,7 @@ import { Logo } from "./Logo/Logo";
 import { Menu } from "./Menu/Menu";
 import { Icons } from "./Icons/Icons";
 import { Button } from "../Button/Button";
-import bars from "../../img/bars-solid.svg";
+import bars from "../../assets/bars-solid.svg";
 
 export const Header = () => {
   return (
@@ -12,7 +12,7 @@ export const Header = () => {
       <Logo />
       <Menu />
       <Icons />
-      <Button>Teste grátis</Button>
+      <Button variant="green">Teste grátis</Button>
     </div>
   )
 }
