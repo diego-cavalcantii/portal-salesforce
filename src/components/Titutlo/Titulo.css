@@ -1,9 +1,16 @@
+@font-face {
+  font-family:'ITC Avant' ;
+  src: url('../../../avant-garde-gothic-2-medium.otf') format('truetype');
+}
+
+
 .titulo {
   text-align: center;
-  font-size: 32px;
+  font-size: 40px;
   color: rgb(3 45 96);
   letter-spacing: -0.128px;
   line-height:40px;
-  font-family: "Mitr", sans-serif;
+  font-family: "ITC Avant", sans-serif;
+  font-weight: 600;
   overflow-y: hidden;
 }

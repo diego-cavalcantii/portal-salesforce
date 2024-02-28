@@ -12,8 +12,7 @@
 
  .sectionAdver h1 {
    grid-area: 1/1/2/1;
-   font-family: "Mitr", sans-serif;
-   font-weight: 600;
+   font-family: "ITC Avant", sans-serif;
    color: #032d60;
    overflow-y: hidden;
  }
@@ -101,11 +100,14 @@
   }
   .sectionAdver h1 {
     font-size: 56px;
-   line-height: 64px;
+    line-height: 64px;
+    letter-spacing: -.24px;
+    max-width: 500px;
   }
   .sectionAdver p {
     font-size: 20px;
     line-height: 30px;
+    max-width: 500px;
   }
   .sectionAdver div {
     flex-direction: row;

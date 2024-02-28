@@ -4,7 +4,7 @@ import findIa from "../../../img/find-ia.webp";
 import appGuide from "../../../img/app-guide.webp";
 import { Card } from "../../Card/Card";
 import { SubTitulo } from "../../SubTitulo/SubTitulo";
-import { Link } from "../../../Link/Link";
+import { Link } from "../../Link/Link";
 import { Artigo } from "../../Artigo/Artigo";
 import { Titulo } from "../../Titutlo/Titulo";
 import { Sessao } from "../../Sessao/Sessao";
@@ -12,7 +12,7 @@ import { Sessao } from "../../Sessao/Sessao";
 export const NovoSalesforce = () => {
   return (
     <Sessao>  
-      <Titulo>O que a de novo na Salesforce ? </Titulo>
+      <Titulo>O que há de novo na Salesforce ? </Titulo>
       <Artigo>
         <Card>
           <img className="img-article"src={imgMarket} alt="imagem do salesforce starter suiter" />
