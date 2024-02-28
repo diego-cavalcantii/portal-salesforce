@@ -4,6 +4,9 @@ import imgMarket from "../../assets/market-salesforce.webp";
 import findIa from "../../assets/find-ia.webp";
 import appGuide from "../../assets/app-guide.webp";
 import pequenasEmpresas from "../../assets/pequenas-empresas.webp";
+import vendas from "../../assets/vendas.webp";
+import atendimento from "../../assets/atendimento.webp";
+import todosProdutos from "../../assets/todos-os-produtos.webp";
 import { Sessao,Titulo,SubTitulo,Artigo,Card,Link,Button } from "..";
 
 
@@ -43,11 +46,29 @@ export const Body = () => {
     <Sessao>
       <Titulo>Saiba como o Salesforce ajuda você a trabalhar de maneira mais inteligente e a crescer com mais rapidez.</Titulo>
       <Artigo>
-        <Card>
+        <Card variant="small-card">
           <img src={pequenasEmpresas} alt="foto ilustrativa sobre o nicho pequenas empresas" />
-          <SubTitulo>Pequenas Empresas</SubTitulo>
+          <SubTitulo variant="small-subtitulo">Pequenas Empresas</SubTitulo>
           <p>Venda de forma mais inteligente e forneça suporte mais rápido em um único aplicativo.</p>
-          <Link>Assistir a demo</Link>
+          <Link variant="small-link">Assistir a demo</Link>
+        </Card>
+        <Card variant="small-card">
+          <img src={vendas} alt="oto ilustrativa sobre o nicho vendas " />
+          <SubTitulo variant="small-subtitulo">Vendas</SubTitulo>
+          <p>Feche mais negócios e acelere o crescimento com o CRM nº1.</p>
+          <Link variant="small-link">Assistir a demo</Link>
+        </Card>
+        <Card variant="small-card">
+          <img src={atendimento} alt="foto ilustrativa sobre o nicho atendimento " />
+          <SubTitulo variant="small-subtitulo">Atendimento</SubTitulo>
+          <p>Gaste menos com serviços escaláveis que os clientes adoram.</p>
+          <Link variant="small-link">Assistir a demo</Link>
+        </Card>
+        <Card variant="small-card">
+          <img src={todosProdutos} alt="foto ilustrativa sobre todos os produtos  " />
+          <SubTitulo variant="small-subtitulo">Todos os Produtos</SubTitulo>
+          <p>Descubra como nossas ofertas do Customer 360 proporcionam sucesso imediato.</p>
+          <Link variant="small-link">Assistir a demo</Link>
         </Card>
       </Artigo>
     </Sessao>

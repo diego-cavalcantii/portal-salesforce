@@ -7,15 +7,25 @@
   border-radius:  0 0 10px 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
 .card > img {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
+.small-card {
+  box-shadow: none;
+  
+}
+
+.small-card p {
+  min-height: 68px;
+}
+
+
 @media (min-width:375px){
   .card {
     width: 100%;
+    gap: 10px;
   }
 }
 
@@ -23,10 +33,18 @@
   .card {
     width: 31%;
   }
+  .small-card {
+    width: 45%;
+    gap: 20px;
+  }
 }
 
-@media (min-width:1200){
+@media (min-width:1200px){
   .card {
     width: 30%;
+  }
+  .small-card{
+    width: 23%;
+    gap: 20px;
   }
 }
