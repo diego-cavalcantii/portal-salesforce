@@ -3,6 +3,7 @@ import "../../styles/SectionAdver.css";
 import imgMarket from "../../assets/market-salesforce.webp";
 import findIa from "../../assets/find-ia.webp";
 import appGuide from "../../assets/app-guide.webp";
+import pequenasEmpresas from "../../assets/pequenas-empresas.webp";
 import { Sessao,Titulo,SubTitulo,Artigo,Card,Link,Button } from "..";
 
 
@@ -19,7 +20,7 @@ export const Body = () => {
           </div>
           <img src={imgMarket} alt="imagem do salesforce starter suiter" />
       </section>
-      <Sessao>  
+    <Sessao>  
       <Titulo>O que há de novo na Salesforce?</Titulo>
       <Artigo>
         <Card>
@@ -36,6 +37,17 @@ export const Body = () => {
           <img src={appGuide} alt="imagem sobre o app guide" />
           <SubTitulo>Expanda sua pequena empresa com um CRM projetado para você.</SubTitulo>
           <Link>Explore a solução</Link>
+        </Card>
+      </Artigo>
+    </Sessao>
+    <Sessao>
+      <Titulo>Saiba como o Salesforce ajuda você a trabalhar de maneira mais inteligente e a crescer com mais rapidez.</Titulo>
+      <Artigo>
+        <Card>
+          <img src={pequenasEmpresas} alt="foto ilustrativa sobre o nicho pequenas empresas" />
+          <SubTitulo>Pequenas Empresas</SubTitulo>
+          <p>Venda de forma mais inteligente e forneça suporte mais rápido em um único aplicativo.</p>
+          <Link>Assistir a demo</Link>
         </Card>
       </Artigo>
     </Sessao>
