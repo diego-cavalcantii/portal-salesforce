@@ -24,7 +24,6 @@
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 10px;
   align-items: center;
-  margin: 40px 10px;
   padding: 48px 32px;
 }
 
@@ -34,17 +33,26 @@
   color: gray;
 }
 
+.ball-card {
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
 
 @media (min-width:375px){
   .card {
     width: 100%;
     gap: 10px;
   }
-  .card-industry {
-    margin: 20px auto;
-  }
   .card-industry > img {
     width: 150px;
+  }
+  .ball-card {
+    width: 90px;
+    padding: 24px;
   }
 }
 
@@ -60,8 +68,8 @@
     width: 45%;
     gap: 10px;
   }
-  .card-industry > img {
-    width: 130px;
+  .ball-card {
+    width: 85px;
   }
 }
 
@@ -76,8 +84,13 @@
   .card-industry {
     width: 22%;
     gap: 10px;
+    margin: 10px 10px 40px 10px;
+    
   }
   .card-industry > img {
     width: 130px;
+  }
+  .ball-card {
+    width: 85px;
   }
 }

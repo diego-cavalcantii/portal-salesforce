@@ -4,9 +4,30 @@
   justify-content: space-between;
 }
 
+.ball-artigo {
+  width: 70%;
+  justify-content: center;
+}
+.ball-artigo > div {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ball-artigo  p {
+  color: #032D60;
+}
+
 @media (min-width:375px) {
   .artigo {
     flex-direction: column;
+  }
+  .ball-artigo {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 

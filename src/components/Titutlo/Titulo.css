@@ -3,7 +3,6 @@
   src: url('../../../avant-garde-gothic-2-medium.otf') format('truetype');
 }
 
-
 .titulo {
   text-align: center;
   font-size: 40px;
@@ -14,4 +13,22 @@
   font-family: "ITC Avant", sans-serif;
   font-weight: 600;
   overflow-y: hidden;
+}
+
+@media (min-width:375px){
+  .titulo {
+    font-size: 30px;
+  }
+}
+
+@media(min-width:768px){
+  .titulo {
+    font-size: 40px;
+  }
+}
+
+@media (min-width:1200px){
+  .titulo {
+    font-size: 40px;
+  }
 }

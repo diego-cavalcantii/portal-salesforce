@@ -5,20 +5,75 @@
   gap: 70px;
 }
 
+.wrappen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.wrappen p {
+  color: rgb(24 24 24);
+  max-width: 750px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.bg {
+  width: 100%;
+}
+
+.whats-crm {
+  display: grid;
+  grid-template-rows: auto;
+  align-items: end;
+  justify-items: start;
+}
+.whats-crm img {
+  grid-area: 1/2/4/2;
+  width: 100%;
+}
+.whats-crm p {
+  letter-spacing:-0.0216px;
+  line-height:28px;
+  font-size: 18px;
+  max-width: 99%;
+}
+
 @media(min-width:375px){
   .container{
-    padding: 48px 30px;
+    padding: 10px 30px 48px 30px;
+  }
+  .wrappen {
+    align-items: normal;
+  }
+  .whats-crm {
+    gap: 20px;
+  }
+  .whats-crm img {
+    grid-area: 5/1/6/1;
+  }
+  .whats-crm .button {
+    justify-items: stretch;
   }
 }
 
 @media(min-width:768px){
   .container{
-    padding: 64px 80px;
+    padding: 5px 80px 64px 80px;
+  }
+  .wrappen  {
+    align-items: center;
   }
 }
 
 @media(min-width:1200px){
   .container{
-  padding: 50px 80px;
+  padding: 5px 80px 50px 80px;
+  }
+  .wrappen {
+    align-items: center;
   }
 }

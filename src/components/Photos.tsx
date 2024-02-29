@@ -14,6 +14,12 @@ import logoSumup from "../assets/logo-sumup.webp";
 import logoGympass from "../assets/logo-gympass.webp";
 import logoVipal from "../assets/logo-vipal.webp";
 import logoTigre from "../assets/logo-tigre.webp";
+import manufatura from "../assets/manufatura.webp";
+import varejo from "../assets/varejo.webp";
+import financeiro from "../assets/financeiro.webp";
+import saude from "../assets/saude.webp";
+import bgRosa from "../assets/bg-rosa.webp";
+import whatsCRM from "../assets/whats-CRM.webp";
 
 export const Photos = {
     appGuide,
@@ -32,4 +38,10 @@ export const Photos = {
     logoGympass,
     logoVipal,
     logoTigre,
+    manufatura,
+    varejo,
+    financeiro,
+    saude,
+    bgRosa,
+    whatsCRM
 }
