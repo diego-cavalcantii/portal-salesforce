@@ -1,17 +1,15 @@
 import "./Icons.css";
-import globe from "../../../assets/globe.svg";
-import user from "../../../assets/user.svg";
-import lupa from "../../../assets/lupa.svg";
+import { Photos } from "../../Photos";
 
 
 
 export const Icons = () => {
   return (
     <div className="icones">
-      <img src={lupa}></img>
-      <img className="globe" src={globe}></img>
+      <img src={Photos.lupa}></img>
+      <img className="globe" src={Photos.globe}></img>
       <div className="user">
-        <img src={user}></img>
+        <img src={Photos.user}></img>
         <p>Login</p>
       </div>
     </div>

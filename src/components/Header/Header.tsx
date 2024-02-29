@@ -3,12 +3,12 @@ import { Logo } from "./Logo/Logo";
 import { Menu } from "./Menu/Menu";
 import { Icons } from "./Icons/Icons";
 import { Button } from "../Button/Button";
-import bars from "../../assets/bars-solid.svg";
+import { Photos } from "../Photos";
 
 export const Header = () => {
   return (
     <div className="header">
-      <img className="bars" src={bars} />
+      <img className="bars" src={Photos.bars} />
       <Logo />
       <Menu />
       <Icons />

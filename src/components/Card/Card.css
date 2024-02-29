@@ -16,9 +16,22 @@
   box-shadow: none;
   
 }
-
 .small-card p {
   min-height: 68px;
+}
+
+.card-industry {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 10px;
+  align-items: center;
+  margin: 40px 10px;
+  padding: 48px 32px;
+}
+
+.card-industry > span {
+  font-size: 14px;
+  padding-bottom: 20px;
+  color: gray;
 }
 
 
@@ -26,6 +39,12 @@
   .card {
     width: 100%;
     gap: 10px;
+  }
+  .card-industry {
+    margin: 20px auto;
+  }
+  .card-industry > img {
+    width: 150px;
   }
 }
 
@@ -37,6 +56,13 @@
     width: 45%;
     gap: 20px;
   }
+  .card-industry {
+    width: 45%;
+    gap: 10px;
+  }
+  .card-industry > img {
+    width: 130px;
+  }
 }
 
 @media (min-width:1200px){
@@ -46,5 +72,12 @@
   .small-card{
     width: 23%;
     gap: 20px;
+  }
+  .card-industry {
+    width: 22%;
+    gap: 10px;
+  }
+  .card-industry > img {
+    width: 130px;
   }
 }
