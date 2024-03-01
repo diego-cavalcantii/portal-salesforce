@@ -145,7 +145,6 @@ export const Body = () => {
               <Button variant="white-blue">Saiba mais</Button>
               <img src={Photos.whatsCRM} alt="" />
             </div>
-
           </Artigo>
         </Sessao>
 

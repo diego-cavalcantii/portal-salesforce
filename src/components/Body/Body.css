@@ -50,13 +50,13 @@
     align-items: normal;
   }
   .whats-crm {
-    gap: 20px;
+    gap: 40px;
   }
   .whats-crm img {
-    grid-area: 5/1/6/1;
+    grid-area: 4/1/5/1;
   }
   .whats-crm .button {
-    justify-items: stretch;
+    justify-self: stretch;
   }
 }
 
@@ -67,6 +67,9 @@
   .wrappen  {
     align-items: center;
   }
+  .whats-crm .button {
+    justify-self: start;
+  }
 }
 
 @media(min-width:1200px){
@@ -75,5 +78,11 @@
   }
   .wrappen {
     align-items: center;
+  }
+  .whats-crm img {
+    grid-area: 1/2/4/2;
+  }
+  .whats-crm .button {
+    justify-self: start;
   }
 }
