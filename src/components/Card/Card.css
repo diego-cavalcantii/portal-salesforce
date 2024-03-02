@@ -1,11 +1,14 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding-bottom: 40px;
   margin-bottom: 40px;
   border-radius:  0 0 10px 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  min-height: 400px;
+}
+
+.card > p {
+  padding: 0 20px;
 }
 .card > img {
   width: 100%;
@@ -14,10 +17,9 @@
 
 .small-card {
   box-shadow: none;
-  
 }
 .small-card p {
-  min-height: 68px;
+  padding: 0;
 }
 
 .card-industry {
@@ -39,13 +41,17 @@
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 100%;
   margin: 10px;
+  min-height:auto;
 }
 
+.big-card {
+  display: grid;
+}
 
 @media (min-width:375px){
   .card {
     width: 100%;
-    gap: 10px;
+    gap: 20px;
   }
   .card-industry > img {
     width: 150px;
@@ -54,11 +60,21 @@
     width: 90px;
     padding: 24px;
   }
+  .big-card {
+    grid-template-columns: 1fr;
+  }
+  .big-card img {
+    grid-area: 3/1/4/1;
+  }
+  .big-card button {
+    justify-self: stretch;
+  }
 }
 
 @media(min-width:768px){
   .card {
     width: 31%;
+    gap: 30px;
   }
   .small-card {
     width: 45%;
@@ -71,11 +87,27 @@
   .ball-card {
     width: 85px;
   }
+  .big-card {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-template-rows: 100px 100px;
+    align-items: start;
+  }
+  .big-card img {
+    grid-area: 1/2/3/2;
+  }
+  .big-card h1 {
+    font-size: 28px;
+    text-align: left;
+    align-content: start;
+  }
+
 }
 
 @media (min-width:1200px){
   .card {
     width: 31%;
+    gap:  30px;
   }
   .small-card{
     width: 23%;
@@ -92,5 +124,21 @@
   }
   .ball-card {
     width: 85px;
+  }
+  .big-card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+  }
+  .big-card img {
+    grid-area: 1/2/3/2;
+  }
+  .big-card button {
+    align-self: start;
+    justify-self: start;
+  }
+  .big-card h1 {
+    align-self: end;
+    text-align: left;
   }
 }

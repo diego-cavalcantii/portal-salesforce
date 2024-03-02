@@ -2,13 +2,17 @@
   color: rgb(3 45 96);
   font-family: "ITC Avant", sans-serif;
   letter-spacing: -0.08px;
-  padding: 0 28px;
+  padding: 0 20px;
   font-weight: 400;
 }
 
 
 .small-subtitulo {
   padding: 0;
+}
+
+.sublime-titulo {
+  text-decoration:underline;
 }
 
 @media(min-width:375px){

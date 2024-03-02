@@ -13,12 +13,29 @@
   align-items: center;
 }
 
+span {
+  font-size: 14px;
+  background-color: #eaf5fe;
+  border-radius: 30px;
+  padding: 10px;
+  color: #000;
+  align-self: start;
+  margin-left: 20px;
+}
+
+
+
+
 .wrappen p {
   color: rgb(24 24 24);
   max-width: 750px;
   text-align: center;
   font-size: 18px;
   line-height: 28px;
+}
+
+.wrappen img {
+  width: 100%;
 }
 
 .bg {
