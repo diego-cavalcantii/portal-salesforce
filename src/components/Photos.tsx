@@ -1,3 +1,4 @@
+import logo from "../assets/salesforce-logo.png";
 import appGuide from "../assets/app-guide.webp";
 import atendimento from "../assets/atendimento.webp";
 import bars from "../assets/bars-solid.svg";
@@ -37,6 +38,7 @@ import appExchange from "../assets/app-exchange.webp";
 import allApps from "../assets/all-apps.webp";
 
 export const Photos = {
+    logo,
     appGuide,
     atendimento,
     bars,

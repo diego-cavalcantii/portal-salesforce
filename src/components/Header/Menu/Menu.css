@@ -4,7 +4,7 @@ nav {
   justify-content: space-between;
 }
 
-ul {
+.menu {
   display: flex;
   gap: 30px;
   align-items: center;
@@ -13,9 +13,10 @@ ul {
 
 }
 
-ul p {
+.menu a {
   font-weight: 700;
-  color: #032d60;
+  color: var(--cor-p);
+  text-decoration: none;
 }
 
 .contato p {
@@ -24,7 +25,7 @@ ul p {
   font-weight: 400;
   text-transform: underline;
   font-size: 14px;
-  color: rgb(3, 45, 96);
+  color: var(--cor-p);
 }
 
 .contato p+p {

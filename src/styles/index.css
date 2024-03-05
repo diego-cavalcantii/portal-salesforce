@@ -1,3 +1,7 @@
+:root {
+  --cor-p: #032d60;
+}
+
 * {
   margin: 0;
   padding: 0;

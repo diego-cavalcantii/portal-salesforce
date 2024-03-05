@@ -1,0 +1,192 @@
+.container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.sectionAdver {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.sectionAdver img {
+  width: 700px;
+  align-self: end;
+  justify-self: end;
+  border-radius: 16px;
+}
+
+.sectionAdver h1 {
+  grid-area: 1/1/2/1;
+  font-family: "ITC Avant", sans-serif;
+  color: #032d60;
+  overflow-y: hidden;
+}
+
+.sectionAdver  p {
+  grid-area: 2/1/3/1;
+  color: #181818;
+}
+
+.sectionAdver div {
+  grid-area: 3/1/4/1;
+  display: flex;
+}
+
+.wrappen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+span {
+  font-size: 14px;
+  background-color: #eaf5fe;
+  border-radius: 30px;
+  padding: 10px;
+  color: #000;
+  align-self: start;
+  margin-left: 20px;
+}
+
+.wrappen p {
+  color: rgb(24 24 24);
+  max-width: 750px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.wrappen img {
+  width: 100%;
+}
+
+.bg {
+  width: 100%;
+}
+
+.whats-crm {
+  display: grid;
+  grid-template-rows: auto;
+  align-items: end;
+  justify-items: start;
+}
+.whats-crm img {
+  grid-area: 1/2/4/2;
+  width: 100%;
+}
+.whats-crm p {
+  letter-spacing:-0.0216px;
+  line-height:28px;
+  font-size: 18px;
+  max-width: 99%;
+}
+
+@media(min-width:375px){
+  .container{
+    padding: 10px 30px 48px 30px;
+  }
+  .sectionAdver {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .sectionAdver img {
+    grid-area: 4/1/5/1;
+  }
+  .sectionAdver h1{
+    font-size: 40px;
+   line-height: 48px;
+  }
+  .sectionAdver  p{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .sectionAdver div {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .wrappen {
+    align-items: normal;
+  }
+  .whats-crm {
+    gap: 40px;
+  }
+  .whats-crm img {
+    grid-area: 4/1/5/1;
+  }
+  .whats-crm .button {
+    justify-self: stretch;
+  }
+}
+
+@media(min-width:768px){
+  .container{
+    padding: 5px 80px 64px 80px;
+  }
+  .sectionAdver {
+    gap: 45px;
+  }
+  .sectionAdver img {
+    width: 100%;
+  }
+  .sectionAdver h1 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -.48px;
+  }
+  .sectionAdver  p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -.24px;
+  }
+  .sectionAdver div {
+    flex-direction: row;
+  }
+  .wrappen  {
+    align-items: center;
+  }
+  .whats-crm .button {
+    justify-self: start;
+  }
+}
+
+@media(min-width:1200px){
+  .container{
+  padding: 5px 80px 50px 80px;
+  }
+  .sectionAdver{
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .sectionAdver img {
+    grid-area: 1/2/3/2;
+  }
+  .sectionAdver h1 {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -.24px;
+    max-width: 500px;
+  }
+  .sectionAdver  p {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 500px;
+  }
+  .sectionAdver div {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .wrappen {
+    align-items: center;
+  }
+  .whats-crm img {
+    grid-area: 1/2/4/2;
+  }
+  .whats-crm .button {
+    justify-self: start;
+  }
+}
