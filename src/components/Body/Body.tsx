@@ -253,7 +253,13 @@ export const Body = () => {
             </Card>
           </Artigo>
         </Sessao>
-
+        <Sessao>
+          <Card variant="big-card">
+            <Titulo>Perguntas? Te colocamos no caminho correto.</Titulo>
+            <Button variant="blue">Entre em contato</Button>
+            <img src={Photos.imgQuests} alt="" />
+          </Card>
+        </Sessao>
       </div>
     </body>
 

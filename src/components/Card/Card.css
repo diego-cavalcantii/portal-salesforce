@@ -4,7 +4,6 @@
   margin-bottom: 40px;
   border-radius:  0 0 10px 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  min-height: 400px;
 }
 
 .card > p {
@@ -92,14 +91,20 @@
     width: 100%;
     grid-template-rows: 100px 100px;
     align-items: start;
+    gap: 50px;
+    padding: 20px 0 0 20px;
   }
   .big-card img {
     grid-area: 1/2/3/2;
+    align-self: flex-end;
   }
   .big-card h1 {
     font-size: 28px;
     text-align: left;
     align-content: start;
+  }
+  .big-card button {
+    justify-self: start;
   }
 
 }
@@ -129,6 +134,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     width: 100%;
+    padding-left: 70px;
   }
   .big-card img {
     grid-area: 1/2/3/2;
@@ -140,5 +146,6 @@
   .big-card h1 {
     align-self: end;
     text-align: left;
+    max-width: 500px;
   }
 }
