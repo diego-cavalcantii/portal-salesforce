@@ -8,4 +8,5 @@ export * from './Sessao/Sessao';
 export * from './Titutlo/Titulo';
 export * from './Header/Icons/Icons';
 export * from './Header/Menu/Menu';
+export * from './Form/Form';
 

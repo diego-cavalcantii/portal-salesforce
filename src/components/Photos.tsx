@@ -36,6 +36,8 @@ import imgQuests from "../assets/img-quest.jpg";
 import consultor from "../assets/consultor.webp";
 import appExchange from "../assets/app-exchange.webp";
 import allApps from "../assets/all-apps.webp";
+import astroCont from "../assets/astro-cont.png";
+import einstenProf from "../assets/einsten-prof.webp";
 
 export const Photos = {
     logo,
@@ -75,5 +77,7 @@ export const Photos = {
     imgQuests,
     consultor,
     appExchange,
-    allApps
+    allApps,
+    astroCont,
+    einstenProf,
 }

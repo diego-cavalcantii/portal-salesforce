@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Menu.css";
 
 const MenuHeader = [
@@ -7,6 +8,7 @@ const MenuHeader = [
   {id:4,text:'Suporte',href:'#'},
   {id:5,text:'Empresa',href:'#'},
   {id:6,text:'Integrantes',href:'/integrantes'},
+  {id:7,text:'Formulario',href:'/formulario'},
 ]
 
 export const Menu = () => {
@@ -15,7 +17,7 @@ export const Menu = () => {
       <ul className="menu">
         {MenuHeader.map((item) => (
           <li key={item.id}>
-            <a href={item.href}>{item.text}</a>
+            <Link to={item.href}>{item.text}</Link>
           </li>
         ))}
       </ul>

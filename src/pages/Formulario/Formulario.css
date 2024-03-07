@@ -1,0 +1,8 @@
+.page-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-gray {
+    background-color: #E1E1E1;
+}
