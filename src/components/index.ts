@@ -9,4 +9,5 @@ export * from './Titutlo/Titulo';
 export * from './Header/Icons/Icons';
 export * from './Header/Menu/Menu';
 export * from './Form/Form';
+export * from './CardForms/CardForms';
 

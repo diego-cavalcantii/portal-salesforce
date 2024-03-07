@@ -1,8 +1,14 @@
 .page-form {
+    padding: 30px 80px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 700px 1fr;
+    gap: 50px;
 }
 
 .card-gray {
     background-color: #E1E1E1;
+}
+
+.page-form form {
+    grid-area: 1/2/7/2;
 }

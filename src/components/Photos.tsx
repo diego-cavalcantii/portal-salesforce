@@ -38,7 +38,9 @@ import appExchange from "../assets/app-exchange.webp";
 import allApps from "../assets/all-apps.webp";
 import astroCont from "../assets/astro-cont.png";
 import einstenProf from "../assets/einsten-prof.webp";
-
+import astroAudi from "../assets/astro-audi.png";
+import astroaMahindra from "../assets/astroMahindra.png";
+import formTeste from "../assets/formTeste.webp";
 export const Photos = {
     logo,
     appGuide,
@@ -80,4 +82,7 @@ export const Photos = {
     allApps,
     astroCont,
     einstenProf,
+    astroAudi,
+    astroaMahindra,
+    formTeste,
 }

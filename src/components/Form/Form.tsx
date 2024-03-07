@@ -1,7 +1,11 @@
 import "./Form.css";
 
-export const Form = () => {
+interface FormProps {
+    children?: React.ReactNode
+}
+
+export const Form = ({children} : FormProps) => {
     return (
-        <form action=""></form>
+        <form action="">{children}</form>
     )
 }
