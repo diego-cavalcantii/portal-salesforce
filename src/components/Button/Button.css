@@ -1,5 +1,4 @@
 .button {
-  padding: 14px 32px;
   border-radius: 4px;
   font-weight: 700;
   border: none;
@@ -7,7 +6,6 @@
 
 .green {
   background-color: #2E844A;
-  padding: 8px 24px;
   color: white;
 }
 
@@ -42,7 +40,7 @@
 
 @media(min-width:1200px) {
   .green {
-    padding: 12px 26px;
+    padding: 5px 26px;
     font-size: 16px;
   }
   .blue, .white-blue {

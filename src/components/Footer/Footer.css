@@ -3,50 +3,30 @@ footer {
   background-color: #032d60;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-
 
 footer p {
   color: white;
 }
 
-footer ul {
-  display:flex;
-}
-
-
-
-
 @media(min-width:375px){
   footer {
-    padding: 30px 20px;
-  }
-  footer > div > p {
-    min-width: 150px;
-  }
-  footer ul {
-    flex-direction: column;
-  }
-  footer li + li {
-   margin: 10px 0 0 0 ;
+    padding: 30px 50px;
+    text-align: center;
   }
 }
-
 @media(min-width:768px){
   footer {
-    justify-content: space-between;
+    padding: 30px 0;
+    text-align: center;
+  }
+}
+@media(min-width:1200px){
+  footer {
+    padding: 30px 0;
+    text-align: center;
   }
 }
 
-@media(min-width:1200px){
-  footer {
-    padding: 30px 50px;
-    justify-content: space-between;
-  }
-  footer ul {
-    flex-direction: row;
-  }
-  footer li + li {
-    margin: 0 0 0 30px;
-  }
-}
+

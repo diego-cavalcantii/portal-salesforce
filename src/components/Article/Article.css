@@ -1,15 +1,15 @@
-.artigo {
+.article {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 
-.ball-artigo {
+.ball-artcile {
   width: 70%;
   justify-content: center;
 }
-.ball-artigo > div {
+.ball-article > div {
   width: 150px;
   display: flex;
   flex-direction: column;
@@ -17,49 +17,58 @@
   text-align: center;
 }
 
-.ball-artigo  p {
+.ball-article  p {
   color: #032D60;
 }
 
-
 @media (min-width:375px) {
-  .artigo {
+  .article {
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  .ball-artigo {
+  .ball-article {
     width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
   }
+  .row-article > div{
+    width: 150px;
+    margin-bottom: 10px;
+  }
 }
 
 @media(min-width:768px){
-  .artigo {
+  .article {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .row-artigo {
+  .row-article {
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 30px;
+    align-items: center;
+    justify-content: start;
+  }
+  .row-article > div{
+    max-width: 300px;
+    min-width: 150px;
+  }
+  .row-article > h1 {
+    max-width: 600px;
   }
 }
 
 @media (min-width: 1200px){
-  .artigo {
+  .article {
     flex-direction: row;
   }
-  .row-artigo {
+  .row-article {
     flex-wrap: nowrap;
     gap: 20px;
   }
+  .row-article > div{
+    width: 350px;
+  }
 }
 
-.row-artigo > div{
-  width: 80%;
-}
 
-.row-artigo h1 {
-  font-size: 25px;
-  text-align: left;
-}
+

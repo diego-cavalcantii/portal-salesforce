@@ -1,4 +1,4 @@
-import { Header, Titulo,Form, Sessao,Button, Artigo, Card, CardForms } from "../../components";
+import {  Titulo,Form, Sessao,Button, Article, CardForms } from "../../components";
 import { Footer } from "../../components/Footer/Footer";
 import { Photos } from "../../components/Photos";
 import "./Formulario.css";
@@ -7,12 +7,12 @@ export default function Formulario(){
     return (
         <>
         <div className="page-form">
-            <Artigo variant="row-artigo">
+            <Article variant="row-article">
                 <div>
                     <img src={Photos.logoSalesforce} alt="" />
                 </div>
                 <Titulo>Construa o seu amanhã agora! Preencha nosso formulário e comece  a moldar o futuro que você deseja.</Titulo>
-                </Artigo>
+            </Article>
             <Form>
                 <img src={Photos.formTeste} alt="" />
             </Form>
@@ -25,14 +25,20 @@ export default function Formulario(){
                 <img src={Photos.einstenProf} alt="" />
             </CardForms>
             <Sessao>
+                <div className="section-history">
                 <Titulo>Caso ainda esteja em dúvida, veja aqui, histórias de grandes empresas que possam te motivar.</Titulo>
-                <div className="card-gray">
+                <CardForms variant="card-history">
                     <img src={Photos.astroAudi} alt="" />
+                    <div>
                     <Button variant="blue">História</Button>
-                </div>
-                <div className="card-gray">
+                    </div>
+                </CardForms>
+                <CardForms variant="card-history">
                     <img src={Photos.astroaMahindra} alt="" />
+                    <div>
                     <Button variant="blue">História</Button>
+                    </div>
+                </CardForms>
                 </div>
             </Sessao>
         </div>

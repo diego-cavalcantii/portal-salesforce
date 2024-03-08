@@ -2,7 +2,7 @@ import "./Home.css";
 import { Header } from "../../components/Header/Header";
 import { Body } from "../../components/Body/Body";
 import {Footer} from "../../components/Footer/Footer";
-import { Sessao,Titulo,SubTitulo,Artigo,Card,Link,Button } from "../../components";
+import { Sessao,Titulo,SubTitulo,Card,Link,Button,Article } from "../../components";
 import { Photos } from "../../components/Photos";
 
 export default function Home(){
@@ -23,7 +23,7 @@ export default function Home(){
         </section>
       <Sessao>  
         <Titulo>O que há de novo na Salesforce?</Titulo>
-        <Artigo>
+        <Article>
           <Card>
             <img src={Photos.imgMarket} alt="imagem do salesforce starter suiter" />
             <SubTitulo>Conheça o Salesforce Starter: o pacote de CRM simples e poderoso.</SubTitulo>
@@ -39,11 +39,11 @@ export default function Home(){
             <SubTitulo>Expanda sua pequena empresa com um CRM projetado para você.</SubTitulo>
             <Link>Explore a solução</Link>
           </Card>
-        </Artigo>
+        </Article>
       </Sessao>
       <Sessao>
         <Titulo>Saiba como o Salesforce ajuda você a trabalhar de maneira mais inteligente e a crescer com mais rapidez.</Titulo>
-        <Artigo>
+        <Article>
           <Card variant="small-card">
             <img src={Photos.pequenasEmpresas} alt="foto ilustrativa sobre o nicho pequenas empresas" />
             <SubTitulo variant="small-subtitulo">Pequenas Empresas</SubTitulo>
@@ -68,11 +68,11 @@ export default function Home(){
             <p>Descubra como nossas ofertas do Customer 360 proporcionam sucesso imediato.</p>
             <Link variant="small-link">Assistir a demo</Link>
           </Card>
-        </Artigo>
+        </Article>
       </Sessao>
       <Sessao>
         <Titulo>Veja como os clientes da Salesforce se tornam empresas clientes.</Titulo>
-        <Artigo>
+        <Article>
           <Card variant="card-industry">
             <img className="logo-industrias" src={Photos.logoSumup} alt="logo sumup" />
             <SubTitulo>Sumup</SubTitulo>
@@ -101,7 +101,7 @@ export default function Home(){
             <span>Construção civil</span>
             <Link>Veja a história</Link>
           </Card>
-        </Artigo>
+        </Article>
       </Sessao>
       <Sessao>
           <div className="wrappen">
@@ -109,7 +109,7 @@ export default function Home(){
             <p>Seja qual for a sua indústria, oferecemos soluções para modernizar o seu negócio, economizar tempo e reduzir custos.</p>
             <Button variant="white-blue">Veja todas as indústrias</Button>
           </div>
-        <Artigo variant="ball-artigo">
+        <Article variant="ball-artigo">
           <div>
             <Card variant="ball-card">
               <img src={Photos.financeiro} alt="" />
@@ -134,24 +134,24 @@ export default function Home(){
             </Card>
             <p>Manufatura</p>
           </div>
-        </Artigo>
+        </Article>
       </Sessao>
       </div>
       <img className="bg" src={Photos.bgRosa} alt="" />
       <div className="container">
         <Sessao>
           <Titulo>Todo tipo de conteúdo. Tudo para te ajudar a crescer.</Titulo>
-          <Artigo>
+          <Article>
             <div className="whats-crm">
               <Titulo>O que é CRM?</Titulo>
               <p>Aprenda tudo sobre o CRM, como unificar todas as suas equipes e como impulsionar o crescimento e a produtividade em toda a sua empresa.</p>
               <Button variant="white-blue">Saiba mais</Button>
               <img src={Photos.whatsCRM} alt="" />
             </div>
-          </Artigo>
+          </Article>
         </Sessao>
         <Sessao>
-          <Artigo>
+          <Article>
             <Card>
               <img src={Photos.imgRelatório} alt="" />
               <span>Relatório</span>
@@ -173,11 +173,11 @@ export default function Home(){
               <p>Aprenda como conectar os dados do cliente para impulsionar a eficiência do marketing.</p>
               <Link>Participe do webinar</Link>
             </Card>
-          </Artigo>
+          </Article>
         </Sessao>
         <Sessao>
           <Titulo>Participe de eventos virtuais da Salesforce. Agora a inspiração vem até você.</Titulo>
-          <Artigo>
+          <Article>
             <Card>
               <img src={Photos.eventos} alt="" />
               <SubTitulo>Mergulhe em paixão, aprendizado e conhecimento.</SubTitulo>
@@ -193,14 +193,14 @@ export default function Home(){
               <SubTitulo>Descubra como impulsionar o crescimento com o Salesforce gratuitamente.</SubTitulo>
               <Link>Assista os Webinars</Link>
             </Card>
-          </Artigo>
+          </Article>
         </Sessao>
         <Sessao>
           <div className="wrappen">
             <Titulo>Aprenda habilidades valiosas gratuitamente com o Trailhead.</Titulo>
             <p>Siga os caminhos de aprendizado guiados e aprenda na prática as habilidades interpessoais, digitais e do Salesforce de qualquer lugar.</p>
           </div>
-          <Artigo>
+          <Article>
             <Card>
               <img src={Photos.iconeCalen} alt="" />
               <SubTitulo>Noções básicas de inteligência artificial</SubTitulo>
@@ -219,7 +219,7 @@ export default function Home(){
               <p>Descubra como a IA generativa e o Einstein estão transformando o futuro do trabalho.</p>
               <Link>Comece a aprender</Link>
             </Card>
-          </Artigo>
+          </Article>
         </Sessao>
         
         <Sessao>
@@ -238,7 +238,7 @@ export default function Home(){
         </Sessao>
         <Sessao>
           <Titulo>Encontre aplicativos e experiência para estender o Salesforce.</Titulo>
-          <Artigo>
+          <Article>
             <Card>
               <img src={Photos.appExchange} alt="" />
               <SubTitulo>O que é AppExchange?</SubTitulo>
@@ -254,7 +254,7 @@ export default function Home(){
               <SubTitulo>Obtenha orientação especializada.</SubTitulo>
               <Link>Encontre consultores (inglês)</Link>
             </Card>
-          </Artigo>
+          </Article>
         </Sessao>
         <Sessao>
           <Card variant="big-card">
