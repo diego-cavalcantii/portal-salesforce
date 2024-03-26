@@ -10,4 +10,5 @@ export * from './Header/Icons/Icons';
 export * from './Header/Menu/Menu';
 export * from './Form/Form';
 export * from './CardForms/CardForms';
+export * from './Footer/Footer';
 

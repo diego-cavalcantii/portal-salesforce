@@ -10,10 +10,15 @@ footer p {
   color: white;
 }
 
+
+
 @media(min-width:375px){
   footer {
     padding: 30px 50px;
     text-align: center;
+  }
+  .fixo {
+    position: static;
   }
 }
 @media(min-width:768px){
@@ -21,11 +26,25 @@ footer p {
     padding: 30px 0;
     text-align: center;
   }
+  .fixo {
+    position: fixed;
+    bottom: 0;
+  }
 }
+@media(min-width:1000px){
+  .fixo {
+    position: static;
+  }
+}
+
 @media(min-width:1200px){
   footer {
     padding: 30px 0;
     text-align: center;
+  }
+  .fixo {
+    position: fixed;
+    bottom: 0;
   }
 }
 

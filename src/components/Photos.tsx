@@ -41,6 +41,10 @@ import einstenProf from "../assets/einsten-prof.webp";
 import astroAudi from "../assets/astro-audi.png";
 import astroaMahindra from "../assets/astroMahindra.png";
 import formTeste from "../assets/formTeste.webp";
+import imgDiego from "../assets/diego.png";
+import imgMateus from "../assets/mateus.png";
+import imgVitor from "../assets/vitor.png";
+
 export const Photos = {
     logo,
     appGuide,
@@ -85,4 +89,7 @@ export const Photos = {
     astroAudi,
     astroaMahindra,
     formTeste,
+    imgDiego,
+    imgMateus,
+    imgVitor
 }
