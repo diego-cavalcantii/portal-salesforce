@@ -1,0 +1,13 @@
+.lateral {
+  border-left: 4px solid var(--cor-p);
+  border-right: 4px solid var(--cor-p);
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.img-responsivo {
+  width: 75%;
+}

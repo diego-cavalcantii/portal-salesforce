@@ -1,11 +1,12 @@
 import "./Sessao.css";
 
 interface SessaoProps {
-  children?:React.ReactNode
+  children?: React.ReactNode
+  variant?: string
 }
 
-export const Sessao = ({children} : SessaoProps) => {
+export const Sessao = ({ children, variant }: SessaoProps) => {
   return (
-    <section className="sessao">{children}</section>
+    <section className={`sessao ${variant}`}>{children}</section>
   )
 }

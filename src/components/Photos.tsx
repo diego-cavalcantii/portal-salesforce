@@ -41,6 +41,12 @@ import einstenProf from "../assets/einsten-prof.webp";
 import astroAudi from "../assets/astro-audi.png";
 import astroaMahindra from "../assets/astroMahindra.png";
 import formTeste from "../assets/formTeste.webp";
+import google from "../assets/google.png";
+import linkedin from "../assets/linkedin.png";
+import bgForm from "../assets/bg-form.jpg";
+import astroGuia from "../assets/astro-guia.png"
+import crm from "../assets/crm.png";
+import bgTutorial from "../assets/bg-tutorial.jpg";
 export const Photos = {
     logo,
     appGuide,
@@ -85,4 +91,10 @@ export const Photos = {
     astroAudi,
     astroaMahindra,
     formTeste,
+    google,
+    linkedin,
+    bgForm,
+    astroGuia,
+    crm,
+    bgTutorial
 }

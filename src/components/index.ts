@@ -1,5 +1,5 @@
 export * from './Card/Card';
-export * from './Link/Link';
+export * from './Links/Links';
 export * from './Button/Button';
 export * from './Header/Header';
 export * from './SubTitulo/SubTitulo';

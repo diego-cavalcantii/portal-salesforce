@@ -5,11 +5,12 @@
 }
 
 
-.ball-artcile {
+.ball-article {
   width: 70%;
   justify-content: center;
 }
-.ball-article > div {
+
+.ball-article>div {
   width: 150px;
   display: flex;
   flex-direction: column;
@@ -17,7 +18,7 @@
   text-align: center;
 }
 
-.ball-article  p {
+.ball-article p {
   color: #032D60;
 }
 
@@ -26,49 +27,53 @@
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .ball-article {
     width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
   }
-  .row-article > div{
+
+  .row-article>div {
     width: 150px;
     margin-bottom: 10px;
   }
 }
 
-@media(min-width:768px){
+@media(min-width:768px) {
   .article {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .row-article {
     flex-wrap: nowrap;
     gap: 30px;
     align-items: center;
     justify-content: start;
   }
-  .row-article > div{
+
+  .row-article>div {
     max-width: 300px;
     min-width: 150px;
   }
-  .row-article > h1 {
+
+  .row-article>h1 {
     max-width: 600px;
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .article {
     flex-direction: row;
   }
+
   .row-article {
     flex-wrap: nowrap;
     gap: 20px;
   }
-  .row-article > div{
+
+  .row-article>div {
     width: 350px;
   }
 }
-
-
-
