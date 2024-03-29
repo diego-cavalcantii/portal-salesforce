@@ -1,10 +1,3 @@
-.bg-form {
-    background-image: url(../../assets/bg-form.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
 .page-form {
     display: grid;
     gap: 50px;

@@ -11,50 +11,33 @@ footer p {
   color: white;
 }
 
-<<<<<<< HEAD
+
 @media(min-width:375px) {
-=======
-
-
-@media(min-width:375px){
->>>>>>> bce38682c5dfe76527dc8e2e7901d4e2214adfde
   footer {
     padding: 30px 50px;
     text-align: center;
   }
+
   .fixo {
     position: static;
   }
 }
-<<<<<<< HEAD
 
 @media(min-width:768px) {
-=======
-@media(min-width:768px){
   footer {
     padding: 30px 0;
     text-align: center;
   }
+
   .fixo {
     position: fixed;
     bottom: 0;
-  }
-}
-@media(min-width:1000px){
-  .fixo {
-    position: static;
   }
 }
 
-@media(min-width:1200px){
->>>>>>> bce38682c5dfe76527dc8e2e7901d4e2214adfde
-  footer {
-    padding: 30px 0;
-    text-align: center;
-  }
+@media(min-width:1000px) {
   .fixo {
-    position: fixed;
-    bottom: 0;
+    position: static;
   }
 }
 
@@ -62,5 +45,10 @@ footer p {
   footer {
     padding: 30px 0;
     text-align: center;
+  }
+
+  .fixo {
+    position: fixed;
+    bottom: 0;
   }
 }

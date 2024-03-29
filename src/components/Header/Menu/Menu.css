@@ -9,13 +9,11 @@ nav {
   gap: 30px;
   align-items: center;
   margin-left: 10px;
-  color: #032d60;
 
 }
 
 .menu a {
   font-weight: 700;
-  color: var(--cor-p);
   text-decoration: none;
 }
 
@@ -25,7 +23,6 @@ nav {
   font-weight: 400;
   text-transform: underline;
   font-size: 14px;
-  color: var(--cor-p);
 }
 
 .contato p+p {

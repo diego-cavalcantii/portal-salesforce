@@ -1,13 +1,181 @@
-.lateral {
-  border-left: 4px solid var(--cor-p);
-  border-right: 4px solid var(--cor-p);
-  width: 85%;
-  margin: 0 auto;
+.gap {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 80px;
+}
+
+.gap p {
+  font-size: 20px;
+}
+
+.bg-clean {
+  background: rgb(249, 252, 254);
+  width: 100%;
+}
+
+.sessoes {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .img-responsivo {
-  width: 75%;
+  filter: drop-shadow(3px 8px 3px #222);
+  object-fit: contain;
+}
+
+.sessoes h1 {
+  font-family: "Archivo Black", sans-serif;
+  text-align: left;
+  letter-spacing: 2px;
+  max-width: 700px;
+  text-transform: uppercase;
+}
+
+.card-guia {
+  display: flex;
+  gap: 40px;
+  margin: 10px auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 25px;
+}
+
+.card-guia h1 {
+  margin-bottom: 20px;
+}
+
+.padding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e1e1e1;
+  padding: 30px;
+  max-width: 500px;
+}
+
+.padding p {
+  text-align: justify;
+}
+
+.linha {
+  border-bottom: 4px solid #000;
+}
+
+.cards-info {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  text-align: center;
+}
+
+.card-info p {
+  flex-grow: 1;
+}
+
+@media(min-width:375px) {
+  .sessoes {
+    flex-direction: column;
+    padding: 50px 15px;
+    gap: 30px;
+  }
+
+  .sessoes h1 {
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .astro {
+    width: 45%;
+  }
+
+  .card-guia {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .card-guia img {
+    height: 170px;
+    width: 400px;
+    object-fit: contain;
+  }
+
+  .img-responsivo {
+    width: 200px;
+  }
+
+  .card-info {
+    width: 100%;
+  }
+}
+
+@media(min-width:768px) {
+  .astro {
+    width: 25%;
+  }
+
+  .card-guia img {
+    align-self: center;
+    height: 200px;
+    width: 400px;
+    object-fit: contain;
+  }
+}
+
+@media(min-width:1200px) {
+  .sessoes {
+    flex-direction: row;
+    padding: 50px 15px;
+    gap: 80px;
+  }
+
+  .sessoes h1 {
+    line-height: 50px;
+    font-size: 40px;
+  }
+
+  .astro {
+    width: 18%;
+  }
+
+  .card-guia {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  .card-guia img {
+    height: 300px;
+    width: 500px;
+    object-fit: contain;
+  }
+
+  .img-responsivo {
+    width: 300px;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .card-info {
+    width: 45%;
+  }
+
+}
+
+.off-gap {
+  gap: 0;
 }

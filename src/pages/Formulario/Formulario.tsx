@@ -6,7 +6,7 @@ import "./Formulario.css";
 
 export default function Formulario() {
     return (
-        <div className="bg-form">
+        <>
             <div className="page-form">
                 <Article variant="row-article">
                     <div>
@@ -43,6 +43,6 @@ export default function Formulario() {
                 </Sessao>
             </div>
             <Footer />
-        </div>
+        </>
     )
 }
