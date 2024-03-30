@@ -1,15 +1,26 @@
 import { useState } from "react";
-import { ThemeProvider } from "styled-components";
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import { lightTheme } from "../../styles/Theme";
 import { darkTheme } from "../../styles/Theme";
 import { Dark } from "../../styles/Theme";
 import { Header } from "..";
 import { Link } from "react-router-dom";
 import { Photos } from "../Photos";
+import { ButtonSubMenuElement, CaixaSubMenuElement, GuideElement, SubMenuElement, ChangeFont } from "../Submenu/Submenu.style";
 
 interface LayoutProps {
   children?: React.ReactNode
 }
+
+const FontAcessibility = createGlobalStyle<{ fontSize: number }>`
+html {
+    font-size: ${({ fontSize }) => `${fontSize}px`};
+  }
+`;
+
+
+
+
 
 export const Layout = ({ children }: LayoutProps) => {
   const [theme, setTheme] = useState("light")
@@ -18,19 +29,45 @@ export const Layout = ({ children }: LayoutProps) => {
     theme === "light" ? setTheme('dark') : setTheme('light')
   }
 
+  const [fontSize, setFontSize] = useState<number>(16); // Tamanho da fonte inicial (em pixels)
+
+  const increaseFontSize = () => {
+    setFontSize(prevSize => prevSize + 1); // Aumenta o tamanho da fonte em 2 pixels
+  };
+
+  const decreaseFontSize = () => {
+    setFontSize(prevSize => prevSize - 1); // Diminui o tamanho da fonte em 2 pixels
+  };
+
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <FontAcessibility fontSize={fontSize} />
       <Dark />
       <Header />
-      <div className="sub-menu">
-        <div className="caixa-sub-menu">
-          <Link to={"/formulario"}>
-            <img src={Photos.form} alt="icone fomulario" />
-          </Link>
-          <button onClick={() => themeToggler()}>Change Theme</button>
-        </div>
-      </div>
+      <SubMenuElement>
+        <CaixaSubMenuElement>
+          <GuideElement>
+            <span>Primeiro contato?</span>
+            <Link to={"/sobre-nos"}>
+              <img src={Photos.guide} alt="icone de placas" />
+            </Link>
+          </GuideElement>
+          <GuideElement>
+            <span>Formulário</span>
+            <Link to={"/formulario"}>
+              <img src={Photos.form} alt="icone fomulario" />
+            </Link>
+          </GuideElement>
+          <GuideElement>
+            <ButtonSubMenuElement onClick={() => themeToggler()}><img src={Photos.moon} alt="icone de lua "></img></ButtonSubMenuElement>
+          </GuideElement>
+          <GuideElement>
+            <ChangeFont onClick={() => increaseFontSize()}>A+</ChangeFont>
+            <ChangeFont onClick={() => decreaseFontSize()}>A-</ChangeFont>
+          </GuideElement>
+        </CaixaSubMenuElement>
+      </SubMenuElement>
       {children}
     </ThemeProvider>
   )

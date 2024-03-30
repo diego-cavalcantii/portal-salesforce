@@ -16,7 +16,6 @@ h2 {
 a {
   color: ${props => props.theme.a};
 }
-
 `
 
 export const lightTheme = {
@@ -25,6 +24,7 @@ export const lightTheme = {
   h1: '#032d60',
   h2: '#032d60',
   a: 'rgb(3 45 96)',
+  img: '#000',
 }
 
 export const darkTheme = {
@@ -33,5 +33,4 @@ export const darkTheme = {
   h1: '#d9d9d9',
   h2: '#d9d9d9',
   a: '#00ffff',
-
 }

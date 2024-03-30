@@ -2,11 +2,12 @@ import React from "react";
 import "./Titulo.css";
 
 interface TituloProps {
-  children ?: React.ReactNode
+  children?: React.ReactNode
+  variant?: string
 }
 
-export const Titulo = ({children} : TituloProps) => {
+export const Titulo = ({ children, variant }: TituloProps) => {
   return (
-    <h1 className="titulo">{children}</h1>
+    <h1 className={`titulo ${variant}`}>{children}</h1>
   )
 }

@@ -31,7 +31,7 @@
 }
 
 .card-industry>span {
-  font-size: 14px;
+  font-size: .875rem;
   padding-bottom: 20px;
   color: gray;
 }
@@ -112,7 +112,7 @@
   }
 
   .big-card h1 {
-    font-size: 28px;
+    font-size: 1.75rem;
     text-align: left;
     align-content: start;
   }

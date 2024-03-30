@@ -7,8 +7,6 @@ const MenuHeader = [
   { id: 3, text: 'Aprendizado', href: '#' },
   { id: 4, text: 'Suporte', href: '#' },
   { id: 5, text: 'Empresa', href: '#' },
-  { id: 6, text: 'Sobre Nos', href: '/sobre-nos' },
-  { id: 7, text: 'Formulario', href: '/formulario' },
 ]
 
 export const Menu = () => {

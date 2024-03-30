@@ -9,7 +9,7 @@ export default function Home() {
     <Layout>
       <div className="container">
         <section className="sectionAdver">
-          <h1>Experimente o Salesforce Starter Suite gratuitamente.</h1>
+          <Titulo variant="titulo-left">Experimente o Salesforce Starter Suite gratuitamente.</Titulo>
           <p>Reúna marketing, vendas e atendimento em um único aplicativo. Experimente o Salesforce Starter Suite hoje mesmo. Não há nada para instalar. Não é necessário cartão de crédito.</p>
           <div>
             <Button variant="blue">Inicie teste gratuito</Button>
@@ -150,21 +150,21 @@ export default function Home() {
           <Article>
             <Card>
               <img src={Photos.imgRelatório} alt="" />
-              <span>Relatório</span>
+              <span className="buble">Relatório</span>
               <SubTitulo variant="sublime-titulo">Leia nosso último relatório da Pesquisa State of Sales.</SubTitulo>
               <p>Saiba como mais de 7.700 profissionais de vendas estão obtendo sucesso imediato.</p>
               <Links>Leia o relatório</Links>
             </Card>
             <Card>
               <img src={Photos.astroBlog} alt="" />
-              <span>Blog</span>
+              <span className="buble">Blog</span>
               <SubTitulo variant="sublime-titulo">Conheça o Blog da Salesforce.</SubTitulo>
               <p>Notícias e percepções para impulsionar a transformação de seus negócios.</p>
               <Links>Saiba mais</Links>
             </Card>
             <Card>
               <img src={Photos.blogSalesforce} alt="" />
-              <span>Webinar</span>
+              <span className="buble">Webinar</span>
               <SubTitulo variant="sublime-titulo">Salesforce e inter: Faça mais com menos.</SubTitulo>
               <p>Aprenda como conectar os dados do cliente para impulsionar a eficiência do marketing.</p>
               <Links>Participe do webinar</Links>

@@ -62,6 +62,8 @@ import pageApren from "../assets/page-aprendizado.png";
 import pageSupo from "../assets/page-suporte.png";
 import pageEmpre from "../assets/page-empresa.png";
 import form from "../assets/form.svg";
+import moon from "../assets/moon.svg";
+import guide from "../assets/guide.svg";
 
 export const Photos = {
     logo,
@@ -128,5 +130,7 @@ export const Photos = {
     pageSupo,
     pageEmpre,
     form,
+    moon,
+    guide
 
 }

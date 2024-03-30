@@ -42,8 +42,8 @@
   align-items: center;
 }
 
-span {
-  font-size: 14px;
+.buble {
+  font-size: .875rem;
   background-color: #eaf5fe;
   border-radius: 30px;
   padding: 10px;
@@ -55,7 +55,7 @@ span {
 .wrappen p {
   max-width: 750px;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 28px;
 }
 
@@ -82,7 +82,7 @@ span {
 .whats-crm p {
   letter-spacing: -0.0216px;
   line-height: 28px;
-  font-size: 18px;
+  font-size: 1.125rem;
   max-width: 99%;
 }
 
@@ -101,12 +101,12 @@ span {
   }
 
   .sectionAdver h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 48px;
   }
 
   .sectionAdver p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 30px;
   }
 
@@ -146,13 +146,13 @@ span {
   }
 
   .sectionAdver h1 {
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 56px;
     letter-spacing: -.48px;
   }
 
   .sectionAdver p {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 30px;
     letter-spacing: -.24px;
   }
@@ -177,7 +177,7 @@ span {
 
   .sectionAdver {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 10px;
   }
 
   .sectionAdver img {
@@ -185,14 +185,15 @@ span {
   }
 
   .sectionAdver h1 {
-    font-size: 56px;
+    font-size: 3.5rem;
     line-height: 64px;
     letter-spacing: -.24px;
+    align-self: flex-end;
     max-width: 500px;
   }
 
   .sectionAdver p {
-    font-size: 20px;
+    font-size: 1.125rem;
     line-height: 30px;
     max-width: 500px;
   }

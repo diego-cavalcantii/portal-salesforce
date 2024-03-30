@@ -14,7 +14,7 @@
   color: white;
 }
 
-.white-blue{
+.white-blue {
   border: 2px solid rgb(1 118 211);
   background-color: white;
   color: rgb(1 118 211);
@@ -23,30 +23,30 @@
 @media(min-width:375px) {
   .green {
     padding: 8px 16px;
-    font-size: 14px;
+    font-size: .875rem;
   }
-  .blue, .white-blue {
+
+  .blue,
+  .white-blue {
     padding: 18px 0;
-    font-size: 16px;
   }
 }
 
-@media(min-width:768px){
-  .blue, .white-blue {
+@media(min-width:768px) {
+
+  .blue,
+  .white-blue {
     padding: 16px 42px;
-    font-size: 16px;
   }
 }
 
 @media(min-width:1200px) {
   .green {
     padding: 5px 26px;
-    font-size: 16px;
   }
-  .blue, .white-blue {
+
+  .blue,
+  .white-blue {
     padding: 16px 42px;
-    font-size: 16px;
   }
-} 
-
-
+}
