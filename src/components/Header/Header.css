@@ -34,7 +34,7 @@
 
 @media(min-width:1200px) {
   .header {
-    padding: 26px 40px;
+    padding: 26px 40px 0 40px;
     gap: 30px;
   }
 

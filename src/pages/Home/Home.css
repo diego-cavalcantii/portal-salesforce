@@ -215,3 +215,7 @@
     justify-self: start;
   }
 }
+
+.scroll-image-container {
+  z-index: 20;
+}

@@ -1,12 +1,44 @@
 import "./Home.css";
-import { Sessao, Titulo, SubTitulo, Card, Links, Button, Article, Header, Footer } from "../../components";
+import { useState } from "react";
+import { Sessao, Titulo, SubTitulo, Card, Links, Button, Article, Footer } from "../../components";
 import { Photos } from "../../components/Photos";
 import { Layout } from "../../components/Layout/Layout";
+import styled from "styled-components";
+import { ContainerAstro } from "../../components/ContainerAstro/ContainerAstro";
+
+const ImageElement = styled.div`
+  display: flex;
+  background-color:rgba(0,0,0,0.5);
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+
+  &>p {
+    max-width: 150px;
+  }
+  &>img {
+    width: 50%;
+  }
+`
+
+const ButtonAstro = styled.button`
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
+  background-color: rgb(1 118 211);
+  color: white;
+  padding: 16px 42px;
+  margin-left: 80px;
+  cursor: pointer;
+`
 
 export default function Home() {
 
+  const [showImages, setShowImages] = useState(false)
+
   return (
     <Layout>
+      <ButtonAstro onClick={() => setShowImages(!showImages)}>{!showImages ? 'Ativar Astro' : 'Desativar Astro'}</ButtonAstro>
       <div className="container">
         <section className="sectionAdver">
           <Titulo variant="titulo-left">Experimente o Salesforce Starter Suite gratuitamente.</Titulo>
@@ -65,6 +97,15 @@ export default function Home() {
               <Links variant="small-link">Assistir a demo</Links>
             </Card>
           </Article>
+          <ContainerAstro variant="left">
+            {showImages &&
+              <ImageElement>
+                <p>Para Saber mais sobre as pequenas empresas acesse esse link  <br />
+                  <a href="https://www.linkedin.com/in/diego-silva-cavalcanti-a8b2b91a4/" target="_blank">https://www.linkedin.com/in/diego-silva-cavalcanti-a8b2b91a4/</a></p>
+                <img src={Photos.astroAudi}></img>
+              </ImageElement>
+            };
+          </ContainerAstro>
         </Sessao>
         <Sessao>
           <Titulo>Veja como os clientes da Salesforce se tornam empresas clientes.</Titulo>
@@ -98,6 +139,15 @@ export default function Home() {
               <Links>Veja a história</Links>
             </Card>
           </Article>
+          <ContainerAstro variant="right">
+            {showImages &&
+              <ImageElement>
+                <p>Para Saber mais sobre as pequenas empresas acesse esse link  <br />
+                  <a href="https://www.linkedin.com/in/diego-silva-cavalcanti-a8b2b91a4/" target="_blank">https://www.linkedin.com/in/diego-silva-cavalcanti-a8b2b91a4/</a></p>
+                <img src={Photos.astroAudi}></img>
+              </ImageElement>
+            };
+          </ContainerAstro>
         </Sessao>
         <Sessao>
           <div className="wrappen">

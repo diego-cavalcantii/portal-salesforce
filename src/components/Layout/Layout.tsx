@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
+import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { lightTheme } from "../../styles/Theme";
 import { darkTheme } from "../../styles/Theme";
 import { Dark } from "../../styles/Theme";
@@ -17,10 +17,6 @@ html {
     font-size: ${({ fontSize }) => `${fontSize}px`};
   }
 `;
-
-
-
-
 
 export const Layout = ({ children }: LayoutProps) => {
   const [theme, setTheme] = useState("light")
@@ -40,11 +36,13 @@ export const Layout = ({ children }: LayoutProps) => {
   };
 
 
+
+
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <FontAcessibility fontSize={fontSize} />
-      <Dark />
       <Header />
+      <Dark />
       <SubMenuElement>
         <CaixaSubMenuElement>
           <GuideElement>
