@@ -6,7 +6,7 @@ import { Dark } from "../../styles/Theme";
 import { Header } from "..";
 import { Link } from "react-router-dom";
 import { Photos } from "../Photos";
-import { ButtonSubMenuElement, GuideElement, SubMenuElement, ChangeFont, CaixaSubMenuElement, AcessibilityElement } from "../Submenu/Submenu.style";
+import { GuideElement, SubMenuElement, ChangeFont, CaixaSubMenuElement, AcessibilityElement, MoonElement } from "../Submenu/Submenu.style";
 
 interface LayoutProps {
   children?: React.ReactNode
@@ -58,7 +58,7 @@ export const Layout = ({ children }: LayoutProps) => {
             </Link>
           </GuideElement>
           <AcessibilityElement>
-            <ButtonSubMenuElement onClick={() => themeToggler()}><img src={Photos.moon} alt="icone de lua "></img></ButtonSubMenuElement>
+            <MoonElement onClick={() => themeToggler()}><img src={Photos.moon} alt="icone de lua "></img></MoonElement>
             <ChangeFont>
               <button onClick={() => increaseFontSize()}>A+</button>
               <button onClick={() => decreaseFontSize()}>A-</button>

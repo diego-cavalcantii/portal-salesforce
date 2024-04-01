@@ -1,4 +1,4 @@
-import "./Links.css";
+import { LinksElement } from "./Links.style";
 
 interface LinksProps {
   children?: React.ReactNode;
@@ -7,6 +7,6 @@ interface LinksProps {
 
 export const Links = ({ children, variant }: LinksProps) => {
   return (
-    <a href="#" className={`link ${variant}`}>{children}</a>
+    <LinksElement href="#" className={`link ${variant}`}>{children}</LinksElement>
   )
 } 

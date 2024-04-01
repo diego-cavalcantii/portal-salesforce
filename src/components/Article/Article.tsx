@@ -1,12 +1,12 @@
-import "./Article.css";
+import { ArticleElement } from "./Article.style";
 
 interface ArtigoPros {
   children?: React.ReactNode;
-  variant ?: string
+  variant?: string
 }
 
-export const Article = ({children, variant} : ArtigoPros) => {
+export const Article = ({ children, variant }: ArtigoPros) => {
   return (
-    <article className={`article ${variant}`}>{children}</article>
+    <ArticleElement className={`article ${variant}`}>{children}</ArticleElement>
   )
 }

@@ -1,16 +1,17 @@
-.article {
+import styled from "styled-components";
+
+export const ArticleElement = styled.article`
+&.article {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-
-.ball-article {
+&.ball-article {
   width: 70%;
   justify-content: center;
 }
-
-.ball-article>div {
+&.ball-article > div {
   width: 150px;
   display: flex;
   flex-direction: column;
@@ -19,57 +20,59 @@
 }
 
 @media (min-width:375px) {
-  .article {
+  &.article {
     flex-direction: column;
     flex-wrap: nowrap;
   }
 
-  .ball-article {
+  &.ball-article {
     width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
   }
 
-  .row-article>div {
+  &.row-article>div {
     width: 150px;
     margin-bottom: 10px;
   }
 }
 
 @media(min-width:768px) {
-  .article {
+  &.article {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .row-article {
+  &.row-article {
     flex-wrap: nowrap;
     gap: 30px;
     align-items: center;
     justify-content: start;
   }
 
-  .row-article>div {
+  &.row-article>div {
     max-width: 300px;
     min-width: 150px;
   }
 
-  .row-article>h1 {
+  &.row-article>h1 {
     max-width: 600px;
   }
 }
 
 @media (min-width: 1200px) {
-  .article {
+  &.article {
     flex-direction: row;
   }
 
-  .row-article {
+  &.row-article {
     flex-wrap: nowrap;
     gap: 20px;
   }
 
-  .row-article>div {
+  &.row-article>div {
     width: 350px;
   }
 }
+
+`

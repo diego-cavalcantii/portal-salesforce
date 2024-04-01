@@ -1,13 +1,13 @@
 import React from "react";
-import "./CardForms.css";
+import { CardFormsElement } from "./CardFoms.style";
 
 interface CardFormsProps {
   children?: React.ReactNode
   variant?: string
 }
 
-export const CardForms = ({children,variant} : CardFormsProps) => {
+export const CardForms = ({ children, variant }: CardFormsProps) => {
   return (
-    <div className={`card-form ${variant}`}>{children}</div>
+    <CardFormsElement className={`card-form ${variant}`}>{children}</CardFormsElement>
   )
 }
