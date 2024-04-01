@@ -1,8 +1,8 @@
-import { Header, Sessao, Titulo } from "../../components";
+import { Link } from "react-router-dom";
+import { Sessao, Titulo, Footer, Layout, Button } from "../../components";
 import { Photos } from "../../components/Photos";
-import "./SobreNos.css";
-import { Footer } from "../../components/Footer/Footer";
-import { Layout } from "../../components/Layout/Layout";
+import { FontBlack } from "../../styles/GlobalStyles";
+import { SectionCardGuia, ContainerGap, ExplaningCrm, ImgResposivoElement, SectionCardsInfo, CardInfo, AstroElement } from "./SobreNos.style";
 
 
 export default function SobreNos() {
@@ -10,111 +10,132 @@ export default function SobreNos() {
 
   return (
     <Layout>
-      <div className="gap">
+      <ContainerGap>
 
-        <div className="sessoes">
+        <Sessao variant="section-guia " >
           <Titulo>Olá, Me chamo Astro! <br />
             Estou aqui para ser seu guia na Salesforce. <br />
             Preparado para essa aventura?</Titulo>
-          <div className="astro">
+          <AstroElement>
             <img src={Photos.bgAstro} alt="Personagem astro dando as boas vindas " />
-          </div>
-        </div>
+          </AstroElement>
+        </Sessao>
 
 
-        <div className="card-guia">
-          <div className="padding">
+        <SectionCardGuia>
+          <ExplaningCrm>
             <h3>Primeiro, eu preciso te apresentar o que é um CRM</h3>
             <span className="pzinho">O CRM, ou Customer Relationship Management, é um software estratégico como um ponto centralizado para armazenar dados valiosos, como histórico de compras, preferências e feedbacks dos clientes.
               <br />
               Ele é o intermédio perfeito para aproximar a empresa ao cliente.</span>
-          </div>
+          </ExplaningCrm>
           <img src={Photos.crm} alt="foto explicativa sobre o crm " />
-        </div>
+        </SectionCardGuia>
 
 
-        <div className="sessoes reverse">
+        <Sessao variant="section-guia reverse">
           <Titulo>quem somos?</Titulo>
-          <div className="img-responsivo">
+          <ImgResposivoElement>
             <img src={Photos.howUs} alt="Personagens Astro e Einsten mostrando a Salesforce" />
-          </div>
-        </div>
+          </ImgResposivoElement>
+        </Sessao>
 
-        <div className="card-guia reverse">
-          <div className="padding ">
-            <span className="pzinho">A Salesforce é uma gigante no mundo do software, famosa por criar soluções avançadas de CRM (Customer Relationship Management), que ajudam empresas a gerenciar e aprimorar seus relacionamentos com clientes. </span>
-          </div>
+        <SectionCardGuia>
+          <ExplaningCrm>
+            <FontBlack>A Salesforce é uma gigante no mundo do software, famosa por criar soluções avançadas de CRM (Customer Relationship Management), que ajudam empresas a gerenciar e aprimorar seus relacionamentos com clientes. </FontBlack>
+          </ExplaningCrm>
           <img src={Photos.astroSales} alt="Personagem astro mostrando o logo da salesforce" />
-        </div>
+        </SectionCardGuia>
 
 
 
-        <div className="sessoes">
+        <Sessao variant="section-guia ">
           <Titulo>trailblazers</Titulo>
-          <div className="img-responsivo">
+          <ImgResposivoElement>
             <img src={Photos.bgTrailblazers} alt="Personagens Astro e Einsten mostrando a Salesforce" />
-          </div>
-        </div>
+          </ImgResposivoElement>
+        </Sessao>
 
-        <div className="card-guia">
-          <div className="padding">
-            <span className="pzinho">Trailblazers na Salesforce são líderes inovadores que inspiram na plataforma, destacando-se por explorar novos caminhos, compartilhar conhecimento e construir uma comunidade colaborativa e dinâmica.</span>
-          </div>
+        <SectionCardGuia>
+          <ExplaningCrm>
+            <FontBlack>Trailblazers na Salesforce são líderes inovadores que inspiram na plataforma, destacando-se por explorar novos caminhos, compartilhar conhecimento e construir uma comunidade colaborativa e dinâmica.</FontBlack>
+          </ExplaningCrm>
           <img src={Photos.astroTrailblazer} alt="Personagem Astro mostrando o logo da salesforce" />
-        </div>
+        </SectionCardGuia>
 
 
-        <div className="sessoes reverse">
+        <Sessao variant="section-guia reverse">
           <Titulo>Agora, vou te passar coordenadas
             para ter uma viagem mais certeira.</Titulo>
-          <div className="img-responsivo">
+          <ImgResposivoElement>
             <img src={Photos.astroGuia} alt="Personagem Astro com um cajado de madeira " />
-          </div>
-        </div>
+          </ImgResposivoElement>
+        </Sessao>
 
 
-        <div className="cards-info">
+        <SectionCardsInfo>
 
-          <div className="card-info">
-            <span className="pzinho">Cardápio de Produtos que a Salesforce oferece</span>
-            <div className="img-info">
+          <CardInfo>
+            <FontBlack>Cardápio de Produtos que a Salesforce oferece</FontBlack>
+            <div>
               <img src={Photos.pageProd} alt="print informativo sobre a pagina produtos" />
             </div>
-          </div>
-          <div className="card-info">
-            <span>Essa seção destaca como as ferramentas da Salesforce são eficazes em desafios específicos de cada indústria.</span>
-            <div className="img-info">
+          </CardInfo>
+          <CardInfo>
+            <FontBlack>Essa seção destaca como as ferramentas da Salesforce são eficazes em desafios específicos de cada indústria.</FontBlack>
+            <div>
               <img src={Photos.pageIndus} alt="print informativo sobre a pagina industria" />
             </div>
-          </div>
-          <div className="card-info">
-            <span>A plataforma interativa da Salesforce visa auxiliar usuários a aprender sobre os produtos, desenvolver habilidades práticas e obter certificações.</span>
-            <div className="img-info">
+          </CardInfo>
+          <CardInfo>
+            <FontBlack>A plataforma interativa da Salesforce visa auxiliar usuários a aprender sobre os produtos, desenvolver habilidades práticas e obter certificações.</FontBlack>
+            <div>
               <img src={Photos.pageApren} alt="print informativo sobre a pagina aprendizado" />
             </div>
-          </div>
-          <div className="card-info">
-            <span>Fornece recursos e informações para ajudar os usuários a resolverem problemas, obterem assistência técnica e acessarem recursos de suporte.</span>
-            <div className="img-info">
+          </CardInfo>
+          <CardInfo>
+            <FontBlack>Fornece recursos e informações para ajudar os usuários a resolverem problemas, obterem assistência técnica e acessarem recursos de suporte.</FontBlack>
+            <div>
               <img src={Photos.pageSupo} alt="print informativo sobre a pagina suporte" />
             </div>
-          </div>
-          <div className="card-info">
-            <span>Todas as informações sobre a Salesforce</span>
-            <div className="img-info">
+          </CardInfo>
+          <CardInfo>
+            <FontBlack>Todas as informações sobre a Salesforce</FontBlack>
+            <div>
               <img src={Photos.pageEmpre} alt="print informativo sobre a pagina empresa" />
             </div>
-          </div>
+          </CardInfo>
+          <CardInfo>
+            <FontBlack>Neste sub-menu você pode encontrar maneiras de melhorar sua navegação, como um modo Noturno ou aumentar e diminuir a fonte. </FontBlack>
+            <div>
+              <img src={Photos.subMenu} alt="print informativo sobre o submenu" />
+            </div>
+          </CardInfo>
+          <CardInfo>
+            <FontBlack>Neste botão você consegue ativar o Astro, onde ele ira te guiar dentro do site para ter uma melhor experiência</FontBlack>
+            <div>
+              <img src={Photos.buttonAstro} alt="print informativo sobre o botão para ativar o astro" />
+            </div>
+          </CardInfo>
+          <CardInfo>
+            <FontBlack>Aqui você tem acesso ao nosso formulário, que é o intermédio para pergamos algumas informações suas para nos ajudar a te atender melhor</FontBlack>
+            <div>
+              <img src={Photos.buttonForm} alt="print informativo sobre o botão do formulario" />
+            </div>
+          </CardInfo>
 
-        </div>
+        </SectionCardsInfo>
 
-        <div className="sessoes off-gap">
+        <Sessao variant="section-guia">
           <Titulo>Agora você esta oficialmente preparado para seguir viagem e aproveitar o mundo da Salesforce.</Titulo>
-          <div >
+          <div>
             <img src={Photos.caracterSales} alt="Personagens da Salesforce comemorando" />
           </div>
-        </div>
-      </div>
+        </Sessao>
+        <Link to={"/"} >
+          <Button variant="blue">Começar a Viagem</Button>
+        </Link>
+      </ContainerGap>
       <Footer />
     </Layout>
   )

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -17,4 +17,8 @@ html {
 img {
   max-width: 100%;
 }
-`;
+`
+
+export const FontBlack = styled.p`
+  color: #000;
+`

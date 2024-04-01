@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { Sessao, Titulo, SubTitulo, Card, Links, Button, Article, Footer } from "../../components";
-import { Photos } from "../../components/Photos";
-import { Layout } from "../../components/Layout/Layout";
 import styled from "styled-components";
-import { ContainerAstro } from "../../components/ContainerAstro/ContainerAstro";
+import { Sessao, Titulo, SubTitulo, Card, Links, Button, Article, Footer, Layout, ContainerAstro } from "../../components";
+import { Photos } from "../../components/Photos";
 import { BgElement, BubleElement, ContainerElement, GridSection, GridWhatsCrm, WrappenElement } from "./Home.style";
 
 const ImageElement = styled.div`
@@ -69,7 +67,7 @@ export default function Home() {
             </Card>
           </Article>
         </Sessao>
-        <Sessao>
+        <Sessao variant="section">
           <Titulo>Saiba como o Salesforce ajuda você a trabalhar de maneira mais inteligente e a crescer com mais rapidez.</Titulo>
           <Article>
             <Card variant="small-card">
@@ -102,12 +100,12 @@ export default function Home() {
               <ImageElement>
                 <p>Para Saber mais sobre as pequenas empresas acesse esse link  <br />
                   <a href="https://www.linkedin.com/in/diego-silva-cavalcanti-a8b2b91a4/" target="_blank">https://www.linkedin.com/in/diego-silva-cavalcanti-a8b2b91a4/</a></p>
-                <img src={Photos.astroAudi}></img>
+                <img src={Photos.astroLeft}></img>
               </ImageElement>
             };
           </ContainerAstro>
         </Sessao>
-        <Sessao>
+        <Sessao variant="section">
           <Titulo>Veja como os clientes da Salesforce se tornam empresas clientes.</Titulo>
           <Article>
             <Card variant="card-industry">
@@ -144,7 +142,7 @@ export default function Home() {
               <ImageElement>
                 <p>Para Saber mais sobre as pequenas empresas acesse esse link  <br />
                   <a href="https://www.linkedin.com/in/diego-silva-cavalcanti-a8b2b91a4/" target="_blank">https://www.linkedin.com/in/diego-silva-cavalcanti-a8b2b91a4/</a></p>
-                <img src={Photos.astroAudi}></img>
+                <img src={Photos.astroRight}></img>
               </ImageElement>
             };
           </ContainerAstro>

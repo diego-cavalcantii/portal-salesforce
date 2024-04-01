@@ -1,10 +1,17 @@
 import styled from "styled-components"
 
-export const FormElement = styled.section`
-background-color: #e4e4e4;
+export const FormElement = styled.form`
+  background-color: #e4e4e4;
   padding: 50px 40px 40px 40px;
   display: flex;
   flex-direction: column;
+
+  &  input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  }
 
   @media(min-width:375px) {
     padding: 60px 20px 60px 20px;
@@ -15,15 +22,15 @@ background-color: #e4e4e4;
   @media(min-width:768px) {
     border-radius: 0;
     box-shadow: none;
-  }
-  @media(min-width:1200px) {
+}
+@media(min-width:1200px) {
     padding: 50px 40px 40px 40px;
     gap: 50px;
   }
 `
 
 export const BoxLogin = styled.div`
-background-color: white;
+  background-color: white;
   border: 1px solid black;
   border-radius: 30px;
   display: flex;
@@ -31,13 +38,17 @@ background-color: white;
   justify-content: center;
   gap: 20px;
 
-  &>img{
-    width: 20px;
-  }
+  & img {
+  width: 20px;
+}
 
 @media(min-width:375px) {
   padding: 15px 0;
   margin-bottom: 15px;
+
+ & p {
+  font-size: .875rem;
+}
 }
 @media(min-width:1200px) {
   padding: 20px 0;
@@ -45,24 +56,19 @@ background-color: white;
 }
 `
 
-export const InputsElement = styled.div`
-display: flex;
+export const InputsElement = styled.article`
+  display: flex;
   justify-content: space-between;
   gap: 10px;
+
+  
 `
 
-export const CheckboxElement = styled.div`
-display: flex;
+export const CheckboxElement = styled.article`
+  display: flex;
   gap: 10px;
 
-  &>input{
-    width: auto;
-  }
-`
-
-export const StyledInput = styled.input`
-padding: 10px 10px;
-  border-radius: 5px;
-  width: 100%;
-  margin-bottom: 20px;
+& > input {
+  width: auto;
+}
 `

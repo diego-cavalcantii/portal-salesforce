@@ -13,4 +13,6 @@ export * from './CardForms/CardForms';
 export * from './Footer/Footer';
 export * from './Header/Menu/Menu';
 export * from './Header/Icons/Icons';
+export * from './Layout/Layout';
+export * from './ContainerAstro/ContainerAstro';
 
