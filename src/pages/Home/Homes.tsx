@@ -6,16 +6,41 @@ import { BgElement, BubleElement, ContainerElement, GridSection, GridWhatsCrm, W
 
 const ImageElement = styled.div`
   display: flex;
-  background-color:rgba(0,0,0,0.5);
-  gap: 10px;
-  padding: 10px;
+  align-items: center;
+  gap: 20px;
+  padding: 8px;
   border-radius: 10px;
+  border: 3px solid darkblue;
 
-  &>p {
-    max-width: 150px;
+  & p {
+    text-decoration: none;
   }
-  &>img {
+  &>div {
     width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  & div img {
+    filter: drop-shadow(3px 3px 3px #222);
+  object-fit: contain;
+  padding: 5px;
+  }
+
+  @media(min-width:375px){
+  background-color:rgba(0,0,0,0.9);
+
+  & p {
+    color: #f5f5f5;
+  }
+  }
+
+  @media(min-width:1200px){
+  background-color:rgba(0,0,0,0.1);
+
+  & p {
+    color: #000;
+  }
   }
 `
 
@@ -96,13 +121,16 @@ export default function Home() {
             </Card>
           </Article>
           <ContainerAstro variant="left">
-            {showImages &&
-              <ImageElement>
-                <p>Para Saber mais sobre as pequenas empresas acesse esse link  <br />
-                  <a href="https://www.linkedin.com/in/diego-silva-cavalcanti-a8b2b91a4/" target="_blank">https://www.linkedin.com/in/diego-silva-cavalcanti-a8b2b91a4/</a></p>
-                <img src={Photos.astroLeft}></img>
-              </ImageElement>
-            };
+            <a href="https://www.salesforce.com/br/products/#products-scroll-tab" target="_blank">
+              {showImages &&
+                <ImageElement>
+                  <p>Essa é a sessão dos nossos produtos, clique no Astro para conhece-los! </p>
+                  <div>
+                    <img src={Photos.astroLeft}></img>
+                  </div>
+                </ImageElement>
+              }
+            </a>
           </ContainerAstro>
         </Sessao>
         <Sessao variant="section">
@@ -138,13 +166,16 @@ export default function Home() {
             </Card>
           </Article>
           <ContainerAstro variant="right">
-            {showImages &&
-              <ImageElement>
-                <p>Para Saber mais sobre as pequenas empresas acesse esse link  <br />
-                  <a href="https://www.linkedin.com/in/diego-silva-cavalcanti-a8b2b91a4/" target="_blank">https://www.linkedin.com/in/diego-silva-cavalcanti-a8b2b91a4/</a></p>
-                <img src={Photos.astroRight}></img>
-              </ImageElement>
-            };
+            <a href="https://www.salesforce.com/br/customer-success-stories/#!page=1" target="_blank">
+              {showImages &&
+                <ImageElement>
+                  <div>
+                    <img src={Photos.astroGuia}></img>
+                  </div>
+                  <p>Esses são os nossos clientes, para conhecer mais clique no Astro!</p>
+                </ImageElement>
+              }
+            </a>
           </ContainerAstro>
         </Sessao>
         <Sessao>
@@ -179,6 +210,18 @@ export default function Home() {
               <p>Manufatura</p>
             </div>
           </Article>
+          <ContainerAstro variant="left">
+            <a href="https://www.salesforce.com/br/editions-pricing/overview/" target="_blank">
+              {showImages &&
+                <ImageElement>
+                  <p>Quer saber mais sobre todas as nossas edições e preços para sua indústria ? <br />  Clique no Astro!</p>
+                  <div>
+                    <img src={Photos.astroGuia} alt="imagem do Astro Guia"></img>
+                  </div>
+                </ImageElement>
+              }
+            </a>
+          </ContainerAstro>
         </Sessao>
       </ContainerElement>
       <BgElement src={Photos.bgRosa} alt="background rosa" />
@@ -272,6 +315,18 @@ export default function Home() {
             <Button variant="blue">Comece o teste gratuito</Button>
             <img src={Photos.freeTest} alt="" />
           </WrappenElement>
+          <ContainerAstro variant="right">
+            <a href="https://trailhead.salesforce.com/pt-BR/trails" target="_blank">
+              {showImages &&
+                <ImageElement>
+                  <div>
+                    <img src={Photos.astroGuia}></img>
+                  </div>
+                  <p>Antes de fazer o teste, conheça nossos caminhos de aprendizado guiado, compostos por modulos e projetos, clicando no Astro!</p>
+                </ImageElement>
+              }
+            </a>
+          </ContainerAstro>
         </Sessao>
         <Sessao>
           <Card variant="big-card">

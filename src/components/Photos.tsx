@@ -68,7 +68,7 @@ import moon from "../assets/moon.svg";
 import guide from "../assets/guide.svg";
 import buttonForm from "../assets/print-formulario.png";
 import astroLeft from "../assets/astro-left.png";
-import astroRight from "../assets/astro-right.webp";
+import astroRight from "../assets/astro-right.png";
 
 
 export const Photos = {
