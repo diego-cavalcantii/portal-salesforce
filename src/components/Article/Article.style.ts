@@ -55,9 +55,6 @@ export const ArticleElement = styled.article`
     min-width: 150px;
   }
 
-  &.row-article>h1 {
-    max-width: 600px;
-  }
 }
 
 @media (min-width: 1200px) {

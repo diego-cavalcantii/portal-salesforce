@@ -1,6 +1,5 @@
-import { Sessao, Footer, Titulo, Article } from "../../components";
+import { Sessao, Footer, Titulo, Article, Layout } from "../../components";
 import { Photos } from "../../components/Photos";
-import { Layout } from "../../components/Layout/Layout";
 import { CaixaIntegrantesElement, IntegrantesElement } from "./Integrantes.style";
 
 export default function Integrantes() {

@@ -61,10 +61,15 @@ import pageIndus from "../assets/page-industry.png";
 import pageApren from "../assets/page-aprendizado.png";
 import pageSupo from "../assets/page-suporte.png";
 import pageEmpre from "../assets/page-empresa.png";
+import subMenu from "../assets/print-SubMenu.png";
+import buttonAstro from "../assets/button-ativarAstro.png";
 import form from "../assets/form.svg";
 import moon from "../assets/moon.svg";
 import guide from "../assets/guide.svg";
-import circle from "../assets/circle.svg";
+import buttonForm from "../assets/print-formulario.png";
+import astroLeft from "../assets/astro-left.png";
+import astroRight from "../assets/astro-right.webp";
+
 
 export const Photos = {
     logo,
@@ -133,6 +138,9 @@ export const Photos = {
     form,
     moon,
     guide,
-    circle
-
+    subMenu,
+    buttonAstro,
+    buttonForm,
+    astroLeft,
+    astroRight,
 }
