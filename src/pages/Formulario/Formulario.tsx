@@ -3,19 +3,20 @@ import { Footer } from "../../components/Footer/Footer";
 import { Photos } from "../../components/Photos";
 import { Link } from "react-router-dom";
 import "./Formulario.css";
+import { Layout } from "../../components/Layout/Layout";
+import { PageForm, SectionHistorys } from "./Formulario.styled";
 
 export default function Formulario() {
     return (
-        <>
-            <div className="page-form">
+        <Layout>
+            <PageForm>
                 <Article variant="row-article">
                     <div>
                         <Link to={"/"}><img src={Photos.logoSalesforce} alt="" /></Link>
                     </div>
                     <Titulo>Construa o seu amanhã agora! Preencha nosso formulário e comece  a moldar o futuro que você deseja.</Titulo>
                 </Article>
-                <Form>
-                </Form>
+                <Form />
                 <CardForms>
                     <p>O Formulário nos ajuda a recolher informações prévias para que o seu atendimento seja o mais preciso e personalizado possível. </p>
                     <img src={Photos.astroCont} alt="" />
@@ -25,7 +26,7 @@ export default function Formulario() {
                     <img src={Photos.einstenProf} alt="" />
                 </CardForms>
                 <Sessao>
-                    <div className="section-history">
+                    <SectionHistorys>
                         <Titulo>Caso ainda esteja em dúvida, veja aqui, histórias de grandes empresas que possam te motivar.</Titulo>
                         <CardForms variant="card-history">
                             <img src={Photos.astroAudi} alt="" />
@@ -39,10 +40,10 @@ export default function Formulario() {
                                 <Button variant="blue">História</Button>
                             </div>
                         </CardForms>
-                    </div>
+                    </SectionHistorys>
                 </Sessao>
-            </div>
+            </PageForm>
             <Footer />
-        </>
+        </Layout>
     )
 }

@@ -1,4 +1,4 @@
-import "./Button.css";
+import { ButtonElement } from "./Button.style";
 
 interface ButtonProps {
   children?: React.ReactNode;
@@ -8,6 +8,6 @@ interface ButtonProps {
 
 export const Button = ({ children, variant }: ButtonProps) => {
   return (
-    <button className={`button ${variant}`}>{children}</button>
+    <ButtonElement className={`button ${variant}`}>{children}</ButtonElement>
   )
 }

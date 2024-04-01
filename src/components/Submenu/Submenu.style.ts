@@ -18,19 +18,10 @@ export const CaixaSubMenuElement = styled.div`
     box-shadow: 0px 3px 6px -3px #000000;
 `
 
-export const ButtonSubMenuElement = styled.button`
+export const MoonElement = styled.button`
   border: none;
   background-color: #fff;
   cursor: pointer;
-
-
-  @media(min-width:375px){
-    display: block;
-  }
-  
-  @media(min-width:1200px){
-    display: none;
-  }
 `
 
 export const GuideElement = styled.div`

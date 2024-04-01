@@ -1,10 +1,10 @@
-import "./Home.css";
 import { useState } from "react";
 import { Sessao, Titulo, SubTitulo, Card, Links, Button, Article, Footer } from "../../components";
 import { Photos } from "../../components/Photos";
 import { Layout } from "../../components/Layout/Layout";
 import styled from "styled-components";
 import { ContainerAstro } from "../../components/ContainerAstro/ContainerAstro";
+import { BgElement, BubleElement, ContainerElement, GridSection, GridWhatsCrm, WrappenElement } from "./Home.style";
 
 const ImageElement = styled.div`
   display: flex;
@@ -39,8 +39,8 @@ export default function Home() {
   return (
     <Layout>
       <ButtonAstro onClick={() => setShowImages(!showImages)}>{!showImages ? 'Ativar Astro' : 'Desativar Astro'}</ButtonAstro>
-      <div className="container">
-        <section className="sectionAdver">
+      <ContainerElement>
+        <GridSection>
           <Titulo variant="titulo-left">Experimente o Salesforce Starter Suite gratuitamente.</Titulo>
           <p>Reúna marketing, vendas e atendimento em um único aplicativo. Experimente o Salesforce Starter Suite hoje mesmo. Não há nada para instalar. Não é necessário cartão de crédito.</p>
           <div>
@@ -48,7 +48,7 @@ export default function Home() {
             <Button variant="white-blue">Assista à demo</Button>
           </div>
           <img src={Photos.imgMarket} alt="imagem do salesforce starter suiter" />
-        </section>
+        </GridSection>
         <Sessao>
           <Titulo>O que há de novo na Salesforce?</Titulo>
           <Article>
@@ -150,11 +150,11 @@ export default function Home() {
           </ContainerAstro>
         </Sessao>
         <Sessao>
-          <div className="wrappen">
+          <WrappenElement>
             <Titulo>Encontre inovações para qualquer setor de indústria.</Titulo>
             <p>Seja qual for a sua indústria, oferecemos soluções para modernizar o seu negócio, economizar tempo e reduzir custos.</p>
             <Button variant="white-blue">Veja todas as indústrias</Button>
-          </div>
+          </WrappenElement>
           <Article variant="ball-article">
             <div>
               <Card variant="ball-card">
@@ -182,39 +182,39 @@ export default function Home() {
             </div>
           </Article>
         </Sessao>
-      </div>
-      <img className="bg" src={Photos.bgRosa} alt="" />
-      <div className="container">
+      </ContainerElement>
+      <BgElement src={Photos.bgRosa} alt="background rosa" />
+      <ContainerElement>
         <Sessao>
           <Titulo>Todo tipo de conteúdo. Tudo para te ajudar a crescer.</Titulo>
           <Article>
-            <div className="whats-crm">
+            <GridWhatsCrm>
               <Titulo>O que é CRM?</Titulo>
               <p>Aprenda tudo sobre o CRM, como unificar todas as suas equipes e como impulsionar o crescimento e a produtividade em toda a sua empresa.</p>
               <Button variant="white-blue">Saiba mais</Button>
-              <img src={Photos.whatsCRM} alt="" />
-            </div>
+              <img src={Photos.whatsCRM} alt="imagem ilustrativa do que é crm" />
+            </GridWhatsCrm>
           </Article>
         </Sessao>
         <Sessao>
           <Article>
             <Card>
               <img src={Photos.imgRelatório} alt="" />
-              <span className="buble">Relatório</span>
+              <BubleElement>Relatório</BubleElement>
               <SubTitulo variant="sublime-titulo">Leia nosso último relatório da Pesquisa State of Sales.</SubTitulo>
               <p>Saiba como mais de 7.700 profissionais de vendas estão obtendo sucesso imediato.</p>
               <Links>Leia o relatório</Links>
             </Card>
             <Card>
               <img src={Photos.astroBlog} alt="" />
-              <span className="buble">Blog</span>
+              <BubleElement>Blog</BubleElement>
               <SubTitulo variant="sublime-titulo">Conheça o Blog da Salesforce.</SubTitulo>
               <p>Notícias e percepções para impulsionar a transformação de seus negócios.</p>
               <Links>Saiba mais</Links>
             </Card>
             <Card>
               <img src={Photos.blogSalesforce} alt="" />
-              <span className="buble">Webinar</span>
+              <BubleElement>Webinar</BubleElement>
               <SubTitulo variant="sublime-titulo">Salesforce e inter: Faça mais com menos.</SubTitulo>
               <p>Aprenda como conectar os dados do cliente para impulsionar a eficiência do marketing.</p>
               <Links>Participe do webinar</Links>
@@ -242,10 +242,10 @@ export default function Home() {
           </Article>
         </Sessao>
         <Sessao>
-          <div className="wrappen">
+          <WrappenElement>
             <Titulo>Aprenda habilidades valiosas gratuitamente com o Trailhead.</Titulo>
             <p>Siga os caminhos de aprendizado guiados e aprenda na prática as habilidades interpessoais, digitais e do Salesforce de qualquer lugar.</p>
-          </div>
+          </WrappenElement>
           <Article>
             <Card>
               <img src={Photos.iconeCalen} alt="" />
@@ -269,11 +269,11 @@ export default function Home() {
         </Sessao>
 
         <Sessao>
-          <div className="wrappen">
+          <WrappenElement>
             <Titulo>Experimente o Salesforce gratuitamente. Não é necessário cartão de crédito nem instalação de software.</Titulo>
             <Button variant="blue">Comece o teste gratuito</Button>
             <img src={Photos.freeTest} alt="" />
-          </div>
+          </WrappenElement>
         </Sessao>
         <Sessao>
           <Card variant="big-card">
@@ -309,7 +309,7 @@ export default function Home() {
             <img src={Photos.imgQuests} alt="" />
           </Card>
         </Sessao>
-      </div>
+      </ContainerElement>
       <Footer />
     </Layout>
   )

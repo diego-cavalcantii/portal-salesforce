@@ -1,5 +1,5 @@
 import React from "react";
-import "./Titulo.css";
+import { TituloElement } from "./Titulo.style";
 
 interface TituloProps {
   children?: React.ReactNode
@@ -8,6 +8,6 @@ interface TituloProps {
 
 export const Titulo = ({ children, variant }: TituloProps) => {
   return (
-    <h1 className={`titulo ${variant}`}>{children}</h1>
+    <TituloElement className={`titulo ${variant}`}>{children}</TituloElement>
   )
 }

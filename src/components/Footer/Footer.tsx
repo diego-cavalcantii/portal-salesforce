@@ -1,15 +1,12 @@
-import "./Footer.css";
+import { FooterElement } from "./Footer.style"
 
-interface FooterProps {
-  variant?: string
-}
 
-export const Footer = ({variant}:FooterProps) => {
+export const Footer = () => {
   return (
-    <footer className={`footer ${variant}`}>
+    <FooterElement>
       <div>
         <p>Mavidi-Solutions &copy; 2023 -  Todos os direitos reservados</p>
       </div>
-    </footer>
+    </FooterElement>
   )
 }
