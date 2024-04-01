@@ -6,7 +6,7 @@ import { Dark } from "../../styles/Theme";
 import { Header } from "..";
 import { Link } from "react-router-dom";
 import { Photos } from "../Photos";
-import { ButtonSubMenuElement, CaixaSubMenuElement, GuideElement, SubMenuElement, ChangeFont } from "../Submenu/Submenu.style";
+import { ButtonSubMenuElement, GuideElement, SubMenuElement, ChangeFont, CaixaSubMenuElement, AcessibilityElement } from "../Submenu/Submenu.style";
 
 interface LayoutProps {
   children?: React.ReactNode
@@ -46,7 +46,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <SubMenuElement>
         <CaixaSubMenuElement>
           <GuideElement>
-            <span>Primeiro contato?</span>
+            <span>Primeiro <br /> contato?</span>
             <Link to={"/sobre-nos"}>
               <img src={Photos.guide} alt="icone de placas" />
             </Link>
@@ -57,13 +57,13 @@ export const Layout = ({ children }: LayoutProps) => {
               <img src={Photos.form} alt="icone fomulario" />
             </Link>
           </GuideElement>
-          <GuideElement>
+          <AcessibilityElement>
             <ButtonSubMenuElement onClick={() => themeToggler()}><img src={Photos.moon} alt="icone de lua "></img></ButtonSubMenuElement>
-          </GuideElement>
-          <GuideElement>
-            <ChangeFont onClick={() => increaseFontSize()}>A+</ChangeFont>
-            <ChangeFont onClick={() => decreaseFontSize()}>A-</ChangeFont>
-          </GuideElement>
+            <ChangeFont>
+              <button onClick={() => increaseFontSize()}>A+</button>
+              <button onClick={() => decreaseFontSize()}>A-</button>
+            </ChangeFont>
+          </AcessibilityElement>
         </CaixaSubMenuElement>
       </SubMenuElement>
       {children}
