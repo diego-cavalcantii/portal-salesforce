@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import "./Menu.css";
 
 const MenuHeader = [
@@ -10,19 +11,25 @@ const MenuHeader = [
 ]
 
 export const Menu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav>
-      <ul className="menu">
-        {MenuHeader.map((item) => (
-          <li key={item.id}>
-            <Link to={item.href}>{item.text}</Link>
-          </li>
-        ))}
-      </ul>
-      <div className="contato">
-        <p><u>Entre em contato</u></p>
-        <p>0800 891 1887</p>
-      </div>
-    </nav>
+    <>
+      <button id="menu-button" className="menu-button" onClick={toggleMenu}>Menu</button>
+      <nav className={isOpen ? 'menu open' : 'menu'}>
+        <ul >
+          {MenuHeader.map((item) => (
+            <li key={item.id}>
+              <Link to={item.href}>{item.text}</Link>
+            </li>
+          ))}
+          <li id="close" onClick={toggleMenu}><a>VOLTAR</a></li>
+        </ul>
+      </nav>
+    </>
   );
 };

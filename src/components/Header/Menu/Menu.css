@@ -1,14 +1,5 @@
-nav {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-}
-
 .menu {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  margin-left: 10px;
+  margin-right: 150px;
 
 }
 
@@ -17,29 +8,102 @@ nav {
   text-decoration: none;
 }
 
-.contato p {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-weight: 400;
-  text-transform: underline;
-  font-size: .875rem;
-}
-
-.contato p+p {
-  margin-top: 5px;
-}
-
 @media(min-width:375px) {
-  nav {
+  .menu {
     position: absolute;
     top: 0;
     left: -220%;
   }
+
+  .menu-button {
+    border: none;
+    padding: 6px 0;
+    width: 60px;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .menu-button:hover {
+    background-color: #004e9c;
+    color: white;
+  }
+
+  .open {
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .open ul {
+    background-color: white;
+    width: 100%;
+  }
+
+  .open ul li {
+    padding: 10px;
+  }
+
+  .open li a {
+    color: darkblue;
+    font-weight: 600;
+    transition: all 0.2s;
+    padding: 10px 30px;
+  }
+
+  .open li:hover {
+    background-color: darkblue;
+  }
+
+  .open li a:hover {
+    color: white;
+  }
+
+  .contato {
+    display: none;
+  }
+
+  #close a {
+    color: darkred;
+    cursor: pointer;
+  }
+
+  #close:hover {
+    background-color: darkred;
+  }
+
+  #close a:hover {
+    color: white;
+  }
 }
 
 @media (min-width:1200px) {
-  nav {
+  .menu {
     position: relative;
     left: 0;
+  }
+
+  ul {
+    display: flex;
+    gap: 30px;
+
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .contato {
+    display: block;
+  }
+
+  #close {
+    display: none;
   }
 }
