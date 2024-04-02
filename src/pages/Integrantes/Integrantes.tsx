@@ -1,5 +1,6 @@
 import { Sessao, Footer, Titulo, Article, Layout } from "../../components";
 import { Photos } from "../../components/Photos";
+import { FontBlack } from "../../styles/GlobalStyles";
 import { CaixaIntegrantesElement, IntegrantesElement } from "./Integrantes.style";
 
 export default function Integrantes() {
@@ -15,19 +16,19 @@ export default function Integrantes() {
             <CaixaIntegrantesElement>
               <img src={Photos.imgDiego} alt="Foto diego" />
               <div>
-                <p>Diego Cavalcanti <br /> RM - 553351</p>
+                <FontBlack>Diego Cavalcanti <br /> RM - 553351</FontBlack>
               </div>
             </CaixaIntegrantesElement>
             <CaixaIntegrantesElement>
               <img src={Photos.imgMateus} alt="Foto Mateus" />
               <div>
-                <p>Mateus Galeazi <br /> RM - 553352</p>
+                <FontBlack>Mateus Galeazi <br /> RM - 553352</FontBlack>
               </div>
             </CaixaIntegrantesElement>
             <CaixaIntegrantesElement>
               <img src={Photos.imgVitor} alt="Foto Vitor" />
               <div>
-                <p>Vitor de Melo <br /> RM - 553483</p>
+                <FontBlack>Vitor de Melo <br /> RM - 553483</FontBlack>
               </div>
             </CaixaIntegrantesElement>
           </IntegrantesElement>

@@ -36,7 +36,7 @@ export default function SobreNos() {
         <Sessao variant="section-guia reverse">
           <Titulo>quem somos?</Titulo>
           <ImgResposivoElement>
-            <img src={Photos.howUs} alt="Personagens Astro e Einsten mostrando a Salesforce" />
+            <img src={Photos.howUs} alt="Astro com o logo da Salesforce" />
           </ImgResposivoElement>
         </Sessao>
 
@@ -44,7 +44,7 @@ export default function SobreNos() {
           <ExplaningCrm>
             <FontBlack>A Salesforce é uma gigante no mundo do software, famosa por criar soluções avançadas de CRM (Customer Relationship Management), que ajudam empresas a gerenciar e aprimorar seus relacionamentos com clientes. </FontBlack>
           </ExplaningCrm>
-          <img src={Photos.astroSales} alt="Personagem astro mostrando o logo da salesforce" />
+          <img src={Photos.astroSalesforce} alt="Personagem astro mostrando o logo da salesforce" />
         </SectionCardGuia>
 
 
@@ -52,7 +52,7 @@ export default function SobreNos() {
         <Sessao variant="section-guia ">
           <Titulo>trailblazers</Titulo>
           <ImgResposivoElement>
-            <img src={Photos.bgTrailblazers} alt="Personagens Astro e Einsten mostrando a Salesforce" />
+            <img src={Photos.bgTrailblazers} alt="Astro com a blusa dos Trailblazers" />
           </ImgResposivoElement>
         </Sessao>
 
@@ -60,7 +60,7 @@ export default function SobreNos() {
           <ExplaningCrm>
             <FontBlack>Trailblazers na Salesforce são líderes inovadores que inspiram na plataforma, destacando-se por explorar novos caminhos, compartilhar conhecimento e construir uma comunidade colaborativa e dinâmica.</FontBlack>
           </ExplaningCrm>
-          <img src={Photos.astroTrailblazer} alt="Personagem Astro mostrando o logo da salesforce" />
+          <img src={Photos.astroTrailblazer} alt="Astro com a blusa dos Trailblazers" />
         </SectionCardGuia>
 
 

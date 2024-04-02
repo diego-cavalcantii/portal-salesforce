@@ -126,7 +126,7 @@ export default function Home() {
                 <ImageElement>
                   <p>Essa é a sessão dos nossos produtos, clique no Astro para conhece-los! </p>
                   <div>
-                    <img src={Photos.astroLeft}></img>
+                    <img src={Photos.astroGuia}></img>
                   </div>
                 </ImageElement>
               }
@@ -187,25 +187,25 @@ export default function Home() {
           <Article variant="ball-article">
             <div>
               <Card variant="ball-card">
-                <img src={Photos.financeiro} alt="" />
+                <img src={Photos.financeiro} alt="icone sobre financeiro" />
               </Card>
               <p>Serviços Financeiros</p>
             </div>
             <div>
               <Card variant="ball-card">
-                <img src={Photos.varejo} alt="" />
+                <img src={Photos.varejo} alt="icone sobre varejo" />
               </Card>
               <p>Varejo</p>
             </div>
             <div>
               <Card variant="ball-card">
-                <img src={Photos.saude} alt="" />
+                <img src={Photos.saude} alt="icone sobre saude" />
               </Card>
               <p>Saúde e Ciências da Vida</p>
             </div>
             <div>
               <Card variant="ball-card">
-                <img src={Photos.manufatura} alt="" />
+                <img src={Photos.manufatura} alt="icone sobre manufatura" />
               </Card>
               <p>Manufatura</p>
             </div>
@@ -240,21 +240,21 @@ export default function Home() {
         <Sessao>
           <Article>
             <Card>
-              <img src={Photos.imgRelatório} alt="" />
+              <img src={Photos.imgRelatório} alt="imagem ilustrativa sobre relatório da Salesforce" />
               <BubleElement>Relatório</BubleElement>
               <SubTitulo variant="sublime-titulo">Leia nosso último relatório da Pesquisa State of Sales.</SubTitulo>
               <p>Saiba como mais de 7.700 profissionais de vendas estão obtendo sucesso imediato.</p>
               <Links>Leia o relatório</Links>
             </Card>
             <Card>
-              <img src={Photos.astroBlog} alt="" />
+              <img src={Photos.astroBlog} alt="Imagem ilustrativa do Astro no Blog" />
               <BubleElement>Blog</BubleElement>
               <SubTitulo variant="sublime-titulo">Conheça o Blog da Salesforce.</SubTitulo>
               <p>Notícias e percepções para impulsionar a transformação de seus negócios.</p>
               <Links>Saiba mais</Links>
             </Card>
             <Card>
-              <img src={Photos.blogSalesforce} alt="" />
+              <img src={Photos.blogSalesforce} alt="Imagem ilustrativa do Blog da Salesforce" />
               <BubleElement>Webinar</BubleElement>
               <SubTitulo variant="sublime-titulo">Salesforce e inter: Faça mais com menos.</SubTitulo>
               <p>Aprenda como conectar os dados do cliente para impulsionar a eficiência do marketing.</p>
@@ -266,17 +266,17 @@ export default function Home() {
           <Titulo>Participe de eventos virtuais da Salesforce. Agora a inspiração vem até você.</Titulo>
           <Article>
             <Card>
-              <img src={Photos.eventos} alt="" />
+              <img src={Photos.eventos} alt="imagem ilustrativa sobre eventos na salesforce" />
               <SubTitulo>Mergulhe em paixão, aprendizado e conhecimento.</SubTitulo>
               <Links>Explore os eventos</Links>
             </Card>
             <Card>
-              <img src={Photos.customer} alt="" />
+              <img src={Photos.customer} alt="imagem sobre o customer da Salesforce" />
               <SubTitulo>Aprenda tudo sobre o Customer 360 em workshops práticos.</SubTitulo>
               <Links>Confira nossos workshops (Inglês)</Links>
             </Card>
             <Card>
-              <img src={Photos.webinars} alt="" />
+              <img src={Photos.webinars} alt="Imagem sobre o Webinars" />
               <SubTitulo>Descubra como impulsionar o crescimento com o Salesforce gratuitamente.</SubTitulo>
               <Links>Assista os Webinars</Links>
             </Card>
@@ -289,19 +289,19 @@ export default function Home() {
           </WrappenElement>
           <Article>
             <Card>
-              <img src={Photos.iconeCalen} alt="" />
+              <img src={Photos.iconeCalen} alt="icone de calendario" />
               <SubTitulo>Noções básicas de inteligência artificial</SubTitulo>
               <p>Aprenda as noções básicas de IA e a tecnologia por trás dos seus recursos incríveis.</p>
               <Links>Comece a aprender</Links>
             </Card>
             <Card>
-              <img src={Photos.iconeCell} alt="" />
+              <img src={Photos.iconeCell} alt="icone de celular" />
               <SubTitulo>Noções básicas do Salesforce Einstein</SubTitulo>
               <p>Descubra insights e preveja resultados com esse avançado conjunto de recursos aprimorados de IA.</p>
               <Links>Comece a aprender</Links>
             </Card>
             <Card>
-              <img src={Photos.iconeMedalha} alt="" />
+              <img src={Photos.iconeMedalha} alt="icone de medalha" />
               <SubTitulo>IA generativa do Einstein: início rápido</SubTitulo>
               <p>Descubra como a IA generativa e o Einstein estão transformando o futuro do trabalho.</p>
               <Links>Comece a aprender</Links>
@@ -313,7 +313,7 @@ export default function Home() {
           <WrappenElement>
             <Titulo>Experimente o Salesforce gratuitamente. Não é necessário cartão de crédito nem instalação de software.</Titulo>
             <Button variant="blue">Comece o teste gratuito</Button>
-            <img src={Photos.freeTest} alt="" />
+            <img src={Photos.freeTest} alt="imagem sobre o teste gratis da salesforce" />
           </WrappenElement>
           <ContainerAstro variant="right">
             <a href="https://trailhead.salesforce.com/pt-BR/trails" target="_blank">
@@ -332,24 +332,24 @@ export default function Home() {
           <Card variant="big-card">
             <Titulo>Perguntas? Vamos colocá-lo no caminho certo.</Titulo>
             <Button variant="blue">Entre em contato</Button>
-            <img src={Photos.imgQuests} alt="" />
+            <img src={Photos.imgQuests} alt="imagem sobre perguntas para Salesforce" />
           </Card>
         </Sessao>
         <Sessao>
           <Titulo>Encontre aplicativos e experiência para estender o Salesforce.</Titulo>
           <Article>
             <Card>
-              <img src={Photos.appExchange} alt="" />
+              <img src={Photos.appExchange} alt="imagem da mascote appy" />
               <SubTitulo>O que é AppExchange?</SubTitulo>
               <Links>Descubra o AppExchange (inglês)</Links>
             </Card>
             <Card>
-              <img src={Photos.allApps} alt="" />
+              <img src={Photos.allApps} alt="imagem ilustrativa sobre todos os apps" />
               <SubTitulo>Encontre todos os apps</SubTitulo>
               <Links>Explore todos os apps (Inglês)</Links>
             </Card>
             <Card>
-              <img src={Photos.consultor} alt="" />
+              <img src={Photos.consultor} alt="imagem de um consultor" />
               <SubTitulo>Obtenha orientação especializada.</SubTitulo>
               <Links>Encontre consultores (inglês)</Links>
             </Card>
@@ -359,7 +359,7 @@ export default function Home() {
           <Card variant="big-card">
             <Titulo>Perguntas? Te colocamos no caminho correto.</Titulo>
             <Button variant="blue">Entre em contato</Button>
-            <img src={Photos.imgQuests} alt="" />
+            <img src={Photos.imgQuests} alt="imagem sobre perguntas para Salesforce" />
           </Card>
         </Sessao>
       </ContainerElement>

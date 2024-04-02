@@ -9,11 +9,11 @@ export const Form = () => {
                 entraremos em contato.</FontBlack>
             <div>
                 <BoxLogin>
-                    <img src={Photos.google} alt="" />
+                    <img src={Photos.google} alt="icone do google" />
                     <FontBlack>Continue with Google</FontBlack>
                 </BoxLogin>
                 <BoxLogin>
-                    <img src={Photos.linkedin} alt="" />
+                    <img src={Photos.linkedin} alt="icone do linkedin" />
                     <FontBlack>Continue with Linkedin</FontBlack>
                 </BoxLogin>
             </div>
