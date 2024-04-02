@@ -1,5 +1,5 @@
 import { Menu, Icons, Button } from "..";
-import { Photos } from "../Photos";
+import { Logos } from "../Imgs";
 import { Link } from "react-router-dom";
 import { ContatoElement, HeaderElement, LogoElement } from "./Header.style";
 
@@ -8,7 +8,7 @@ export const Header = () => {
     <>
       <HeaderElement>
         <Link to={"/"}>
-          <LogoElement src={Photos.logo} alt="Logo da Salesforce" />
+          <LogoElement src={Logos.logo} alt="Logo da Salesforce" />
         </Link>
         <Menu />
         <ContatoElement>

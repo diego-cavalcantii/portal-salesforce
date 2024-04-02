@@ -62,22 +62,57 @@ import howUs from "../assets/how-us.jpg";
 import astroSalesforce from "../assets/astro-salesforce.png";
 import astroTrailblazer from "../assets/astro-trailblazer.png";
 
-export const Photos = {
-    logo,
-    appGuide,
-    atendimento,
-    findIa,
+export const Icones = {
+    user,
+    iconeMedalha,
+    iconeCalen,
+    iconeCell,
+    google,
+    linkedin,
+    form,
+    moon,
+    guide,
     globe,
     lupa,
-    imgMarket,
-    pequenasEmpresas,
-    todosProdutos,
-    user,
-    vendas,
+}
+
+export const Astros = {
+    astroAudi,
+    astroaMahindra,
+    astroGuia,
+    astroSalesforce,
+    astroTrailblazer,
+    astroBlog,
+    astroCont,
+}
+
+export const Logos = {
+    logo,
     logoSumup,
     logoGympass,
     logoVipal,
     logoTigre,
+}
+
+export const Pages = {
+    pageProd,
+    pageIndus,
+    pageApren,
+    pageSupo,
+    pageEmpre,
+    buttonAstro,
+    buttonForm,
+    subMenu,
+}
+
+export const Photos = {
+    appGuide,
+    atendimento,
+    findIa,
+    imgMarket,
+    pequenasEmpresas,
+    todosProdutos,
+    vendas,
     manufatura,
     varejo,
     financeiro,
@@ -85,26 +120,16 @@ export const Photos = {
     bgRosa,
     whatsCRM,
     blogSalesforce,
-    astroBlog,
     imgRelatório,
     eventos,
     customer,
     webinars,
-    iconeMedalha,
-    iconeCalen,
-    iconeCell,
     freeTest,
     imgQuests,
     consultor,
     appExchange,
     allApps,
-    astroCont,
     einstenProf,
-    astroAudi,
-    astroaMahindra,
-    google,
-    linkedin,
-    astroGuia,
     crm,
     imgDiego,
     imgMateus,
@@ -112,18 +137,5 @@ export const Photos = {
     bgAstro,
     bgTrailblazers,
     caracterSales,
-    pageProd,
-    pageIndus,
-    pageApren,
-    pageSupo,
-    pageEmpre,
-    form,
-    moon,
-    guide,
-    subMenu,
-    buttonAstro,
-    buttonForm,
     howUs,
-    astroSalesforce,
-    astroTrailblazer
 }

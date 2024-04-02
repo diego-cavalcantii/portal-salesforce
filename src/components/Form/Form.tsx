@@ -1,5 +1,5 @@
 import { FontBlack } from "../../styles/GlobalStyles";
-import { Photos } from "../Photos";
+import { Icones } from "../Imgs";
 import { BoxLogin, CheckboxElement, FormElement, InputsElement } from "./Form.style";
 
 export const Form = () => {
@@ -9,11 +9,11 @@ export const Form = () => {
                 entraremos em contato.</FontBlack>
             <div>
                 <BoxLogin>
-                    <img src={Photos.google} alt="icone do google" />
+                    <img src={Icones.google} alt="icone do google" />
                     <FontBlack>Continue with Google</FontBlack>
                 </BoxLogin>
                 <BoxLogin>
-                    <img src={Photos.linkedin} alt="icone do linkedin" />
+                    <img src={Icones.linkedin} alt="icone do linkedin" />
                     <FontBlack>Continue with Linkedin</FontBlack>
                 </BoxLogin>
             </div>

@@ -128,3 +128,21 @@ export const AstroElement = styled.div`
   width: 18%;
 }
 `
+
+export const SeguirViagem = styled.div`
+  display: flex;
+  margin: 0 10px;
+
+  & .button {
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  @media(min-width:375px){
+    justify-content: center;
+  }
+  @media(min-width:1200px){
+    justify-content: end;
+  }
+
+
+`

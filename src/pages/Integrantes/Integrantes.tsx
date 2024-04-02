@@ -1,5 +1,5 @@
 import { Sessao, Footer, Titulo, Article, Layout } from "../../components";
-import { Photos } from "../../components/Photos";
+import { Photos } from "../../components/Imgs";
 import { FontBlack } from "../../styles/GlobalStyles";
 import { CaixaIntegrantesElement, IntegrantesElement } from "./Integrantes.style";
 

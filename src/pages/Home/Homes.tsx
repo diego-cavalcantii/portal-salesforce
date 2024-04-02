@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { Sessao, Titulo, SubTitulo, Card, Links, Button, Article, Footer, Layout, ContainerAstro } from "../../components";
-import { Photos } from "../../components/Photos";
+import { Astros, Icones, Logos, Photos } from "../../components/Imgs";
 import { BgElement, BubleElement, ContainerElement, GridSection, GridWhatsCrm, WrappenElement } from "./Home.style";
 
 const ImageElement = styled.div`
@@ -126,7 +126,7 @@ export default function Home() {
                 <ImageElement>
                   <p>Essa é a sessão dos nossos produtos, clique no Astro para conhece-los! </p>
                   <div>
-                    <img src={Photos.astroGuia}></img>
+                    <img src={Astros.astroGuia} alt="imagem do Astro Guia"></img>
                   </div>
                 </ImageElement>
               }
@@ -137,28 +137,28 @@ export default function Home() {
           <Titulo>Veja como os clientes da Salesforce se tornam empresas clientes.</Titulo>
           <Article>
             <Card variant="card-industry">
-              <img className="logo-industrias" src={Photos.logoSumup} alt="logo sumup" />
+              <img className="logo-industrias" src={Logos.logoSumup} alt="logo sumup" />
               <SubTitulo>Sumup</SubTitulo>
               <p>Indústria</p>
               <p>Serviços Financeiros</p>
               <Links>Veja a história</Links>
             </Card>
             <Card variant="card-industry">
-              <img className="logo-industrias" src={Photos.logoGympass} alt="logo Gympass" />
+              <img className="logo-industrias" src={Logos.logoGympass} alt="logo Gympass" />
               <SubTitulo>Sumup</SubTitulo>
               <p>Indústria</p>
               <p>Saúde</p>
               <Links>Veja a história</Links>
             </Card>
             <Card variant="card-industry">
-              <img className="logo-industrias" src={Photos.logoVipal} alt="logo Vipal" />
+              <img className="logo-industrias" src={Logos.logoVipal} alt="logo Vipal" />
               <SubTitulo>Sumup</SubTitulo>
               <p>Indústria</p>
               <p>Manufatura</p>
               <Links>Veja a história</Links>
             </Card>
             <Card variant="card-industry">
-              <img className="logo-industrias" src={Photos.logoTigre} alt="logo Tigre" />
+              <img className="logo-industrias" src={Logos.logoTigre} alt="logo Tigre" />
               <SubTitulo>Sumup</SubTitulo>
               <p>Indústria</p>
               <p>Construção civil</p>
@@ -170,7 +170,7 @@ export default function Home() {
               {showImages &&
                 <ImageElement>
                   <div>
-                    <img src={Photos.astroGuia}></img>
+                    <img src={Astros.astroGuia}></img>
                   </div>
                   <p>Esses são os nossos clientes, para conhecer mais clique no Astro!</p>
                 </ImageElement>
@@ -216,7 +216,7 @@ export default function Home() {
                 <ImageElement>
                   <p>Quer saber mais sobre todas as nossas edições e preços para sua indústria ? <br />  Clique no Astro!</p>
                   <div>
-                    <img src={Photos.astroGuia} alt="imagem do Astro Guia"></img>
+                    <img src={Astros.astroGuia} alt="imagem do Astro Guia"></img>
                   </div>
                 </ImageElement>
               }
@@ -247,7 +247,7 @@ export default function Home() {
               <Links>Leia o relatório</Links>
             </Card>
             <Card>
-              <img src={Photos.astroBlog} alt="Imagem ilustrativa do Astro no Blog" />
+              <img src={Astros.astroBlog} alt="Imagem ilustrativa do Astro no Blog" />
               <BubleElement>Blog</BubleElement>
               <SubTitulo variant="sublime-titulo">Conheça o Blog da Salesforce.</SubTitulo>
               <p>Notícias e percepções para impulsionar a transformação de seus negócios.</p>
@@ -289,19 +289,19 @@ export default function Home() {
           </WrappenElement>
           <Article>
             <Card>
-              <img src={Photos.iconeCalen} alt="icone de calendario" />
+              <img src={Icones.iconeCalen} alt="icone de calendario" />
               <SubTitulo>Noções básicas de inteligência artificial</SubTitulo>
               <p>Aprenda as noções básicas de IA e a tecnologia por trás dos seus recursos incríveis.</p>
               <Links>Comece a aprender</Links>
             </Card>
             <Card>
-              <img src={Photos.iconeCell} alt="icone de celular" />
+              <img src={Icones.iconeCell} alt="icone de celular" />
               <SubTitulo>Noções básicas do Salesforce Einstein</SubTitulo>
               <p>Descubra insights e preveja resultados com esse avançado conjunto de recursos aprimorados de IA.</p>
               <Links>Comece a aprender</Links>
             </Card>
             <Card>
-              <img src={Photos.iconeMedalha} alt="icone de medalha" />
+              <img src={Icones.iconeMedalha} alt="icone de medalha" />
               <SubTitulo>IA generativa do Einstein: início rápido</SubTitulo>
               <p>Descubra como a IA generativa e o Einstein estão transformando o futuro do trabalho.</p>
               <Links>Comece a aprender</Links>
@@ -320,7 +320,7 @@ export default function Home() {
               {showImages &&
                 <ImageElement>
                   <div>
-                    <img src={Photos.astroGuia}></img>
+                    <img src={Astros.astroGuia}></img>
                   </div>
                   <p>Antes de fazer o teste, conheça nossos caminhos de aprendizado guiado, compostos por modulos e projetos, clicando no Astro!</p>
                 </ImageElement>
