@@ -8,7 +8,7 @@ export const ButtonElement = styled.button`
   }
 
   &.green {
-  background-color: #2E844A;
+  background-color: #2E844B;
   color: white;
 }
 
