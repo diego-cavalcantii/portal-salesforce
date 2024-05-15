@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-import { Sessao, Titulo, Footer, Layout, Button } from "../../components";
+import { Footer, Layout } from "../../components";
 import { Astros, Pages, Photos } from "../../components/Imgs";
 import { FontBlack } from "../../styles/GlobalStyles";
 import { SectionCardGuia, ContainerGap, ExplaningCrm, ImgResposivoElement, SectionCardsInfo, CardInfo, AstroElement, SeguirViagem } from "./SobreNos.style";
+import { BlueButton, SessaoGuiaElement, TituloElement, SessaoGuiaReverseElement } from "../../styles/style";
+
 
 
 export default function SobreNos() {
@@ -12,14 +14,14 @@ export default function SobreNos() {
     <Layout>
       <ContainerGap>
 
-        <Sessao variant="section-guia " >
-          <Titulo>Olá, Me chamo Astro! <br />
+        <SessaoGuiaElement>
+          <TituloElement>Olá, Me chamo Astro! <br />
             Estou aqui para ser seu guia na Salesforce. <br />
-            Preparado para essa aventura?</Titulo>
+            Preparado para essa aventura?</TituloElement>
           <AstroElement>
             <img src={Photos.bgAstro} alt="Personagem astro dando as boas vindas " />
           </AstroElement>
-        </Sessao>
+        </SessaoGuiaElement>
 
 
         <SectionCardGuia>
@@ -33,12 +35,12 @@ export default function SobreNos() {
         </SectionCardGuia>
 
 
-        <Sessao variant="section-guia reverse">
-          <Titulo>quem somos?</Titulo>
+        <SessaoGuiaReverseElement>
+          <TituloElement>quem somos?</TituloElement>
           <ImgResposivoElement>
             <img src={Photos.howUs} alt="Astro com o logo da Salesforce" />
           </ImgResposivoElement>
-        </Sessao>
+        </SessaoGuiaReverseElement>
 
         <SectionCardGuia>
           <ExplaningCrm>
@@ -49,12 +51,12 @@ export default function SobreNos() {
 
 
 
-        <Sessao variant="section-guia ">
-          <Titulo>trailblazers</Titulo>
+        <SessaoGuiaElement>
+          <TituloElement>trailblazers</TituloElement>
           <ImgResposivoElement>
             <img src={Photos.bgTrailblazers} alt="Astro com a blusa dos Trailblazers" />
           </ImgResposivoElement>
-        </Sessao>
+        </SessaoGuiaElement>
 
         <SectionCardGuia>
           <ExplaningCrm>
@@ -64,13 +66,13 @@ export default function SobreNos() {
         </SectionCardGuia>
 
 
-        <Sessao variant="section-guia reverse">
-          <Titulo>Agora, vou te passar coordenadas
-            para ter uma viagem mais certeira.</Titulo>
+        <SessaoGuiaReverseElement>
+          <TituloElement>Agora, vou te passar coordenadas
+            para ter uma viagem mais certeira.</TituloElement>
           <ImgResposivoElement>
             <img src={Astros.astroGuia} alt="Personagem Astro com um cajado de madeira " />
           </ImgResposivoElement>
-        </Sessao>
+        </SessaoGuiaReverseElement>
 
 
         <SectionCardsInfo>
@@ -119,15 +121,15 @@ export default function SobreNos() {
           </CardInfo>
         </SectionCardsInfo>
 
-        <Sessao variant="section-guia">
-          <Titulo>Agora você esta oficialmente preparado para seguir viagem e aproveitar o mundo da Salesforce.</Titulo>
+        <SessaoGuiaElement>
+          <TituloElement>Agora você esta oficialmente preparado para seguir viagem e aproveitar o mundo da Salesforce.</TituloElement>
           <div>
             <img src={Photos.caracterSales} alt="Personagens da Salesforce comemorando" />
           </div>
-        </Sessao>
+        </SessaoGuiaElement>
         <SeguirViagem>
           <Link to={"/"} >
-            <Button variant="blue">Começar a Viagem</Button>
+            <BlueButton>Começar a Viagem</BlueButton>
           </Link>
         </SeguirViagem>
       </ContainerGap>

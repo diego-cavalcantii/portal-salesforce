@@ -1,7 +1,8 @@
-import { Menu, Icons, Button } from "..";
+import { Menu, Icons } from "..";
 import { Logos } from "../Imgs";
 import { Link } from "react-router-dom";
 import { ContatoElement, HeaderElement, LogoElement } from "./Header.style";
+import { GreenButton } from "../../styles/Button";
 
 export const Header = () => {
   return (
@@ -16,7 +17,7 @@ export const Header = () => {
           <p>0800 891 1887</p>
         </ContatoElement>
         <Icons />
-        <Button variant="green">Teste grátis</Button>
+        <GreenButton>Teste grátis</GreenButton>
       </HeaderElement>
     </>
   )
