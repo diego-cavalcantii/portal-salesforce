@@ -1,4 +1,3 @@
-import { useContext, useState } from "react";
 import { Footer, Layout } from "../../components";
 import { Icones, Photos } from "../../components/Imgs";
 import { FontBlack } from "../../styles/GlobalStyles";
