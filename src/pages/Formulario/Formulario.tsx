@@ -4,7 +4,7 @@ import { BlueButton } from "../../styles/Button";
 import { FontBlack } from "../../styles/GlobalStyles";
 import { CardFormsElement, Historys, PageForm, CardHistory } from "./Formulario.style";
 import { TituloElement, SessaoElement, TituloForms } from "../../styles/style";
-import { Link } from "react-router-dom";
+
 
 export default function Formulario() {
     return (
