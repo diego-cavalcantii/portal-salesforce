@@ -5,4 +5,4 @@ export * from './Titulo';
 export * from './SubTitulo';
 export * from './Links';
 export * from './Sessao';
-export * from './ContainerAstro';
+export * from '../components/AstroComponent/AstroComponent';

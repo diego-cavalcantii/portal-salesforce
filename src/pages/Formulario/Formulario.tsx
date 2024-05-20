@@ -4,6 +4,7 @@ import { BlueButton } from "../../styles/Button";
 import { FontBlack } from "../../styles/GlobalStyles";
 import { CardFormsElement, Historys, PageForm, CardHistory } from "./Formulario.style";
 import { TituloElement, SessaoElement, TituloForms } from "../../styles/style";
+import { Link } from "react-router-dom";
 
 export default function Formulario() {
     return (
@@ -24,15 +25,15 @@ export default function Formulario() {
                         <TituloElement>Caso ainda esteja em dúvida, veja aqui, histórias de grandes empresas que possam te motivar.</TituloElement>
                         <CardHistory>
                             <img src={Astros.astroAudi} alt="imagem do astro com a marca Audi" />
-                            <div>
+                            <a href='https://www.salesforce.com/in/resources/customer-stories/mahindra-and-mahindra/' target="blank">
                                 <BlueButton>História</BlueButton>
-                            </div>
+                            </a>
                         </CardHistory>
                         <CardHistory>
                             <img src={Astros.astroaMahindra} alt="imagem do astro com a marca Mahindra" />
-                            <div>
+                            <a href="https://www.salesforce.com/br/customer-success-stories/audi/" target="blank">
                                 <BlueButton>História</BlueButton>
-                            </div>
+                            </a>
                         </CardHistory>
                     </Historys>
                 </SessaoElement>

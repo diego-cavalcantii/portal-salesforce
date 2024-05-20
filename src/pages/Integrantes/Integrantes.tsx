@@ -1,8 +1,8 @@
-import { Footer, Article, Layout } from "../../components";
+import { Footer, Layout } from "../../components";
 import { Photos } from "../../components/Imgs";
 import { FontBlack } from "../../styles/GlobalStyles";
 import { CaixaIntegrantesElement, IntegrantesElement } from "./Integrantes.style";
-import { TituloElement, SessaoElement } from "../../styles/style";
+import { TituloElement, SessaoElement, ArticleElement } from "../../styles/style";
 
 export default function Integrantes() {
   return (
@@ -12,7 +12,7 @@ export default function Integrantes() {
           <TituloElement>MAVIDI-SOLUTIONS</TituloElement>
           <p>Integrantes</p>
         </div>
-        <Article>
+        <ArticleElement>
           <IntegrantesElement>
             <CaixaIntegrantesElement>
               <img src={Photos.imgDiego} alt="Foto diego" />
@@ -33,7 +33,7 @@ export default function Integrantes() {
               </div>
             </CaixaIntegrantesElement>
           </IntegrantesElement>
-        </Article>
+        </ArticleElement>
       </SessaoElement>
       <Footer />
     </Layout>

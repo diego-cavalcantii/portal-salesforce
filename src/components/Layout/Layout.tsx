@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
-import { lightTheme } from "../../styles/Theme";
-import { darkTheme } from "../../styles/Theme";
-import { Dark } from "../../styles/Theme";
+import { lightTheme, darkTheme, Dark } from "../../styles/Theme";
 import { Header } from "..";
 import { Link } from "react-router-dom";
 import { Icones } from "../Imgs";
-import { GuideElement, SubMenuElement, ChangeFont, CaixaSubMenuElement, AcessibilityElement, MoonElement } from "../Submenu/Submenu.style";
+import { GuideElement, SubMenuElement, ChangeFont, CaixaSubMenuElement, AcessibilityElement, MoonElement } from "../Layout/Layout.style";
 
 interface LayoutProps {
   children?: React.ReactNode

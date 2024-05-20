@@ -11,6 +11,7 @@ export const ButtonElement = styled.button`
 export const BlueButton = styled(ButtonElement)`
 background-color: rgb(1 118 211);
 color: white;
+cursor: pointer;
 
 @media(min-width:375px) {
     padding: 18px 0;
@@ -51,5 +52,15 @@ export const WhiteBlueButton = styled(ButtonElement)`
 @media(min-width:1200px) {
   padding: 16px 42px;
 }
-
 `;
+
+export const ButtonAstro = styled.button`
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
+  background-color: rgb(1 118 211);
+  color: white;
+  padding: 16px 42px;
+  margin-left: 80px;
+  cursor: pointer;
+`

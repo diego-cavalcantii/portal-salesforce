@@ -8,15 +8,14 @@ export const SessaoElement = styled.section`
 `;
 
 export const SessaoGuiaElement = styled(SessaoElement)`
-  &.section-guia {
   width: 80%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
   align-items: center;
-}
 
-&.section-guia h1 {
+
+ > h1 {
   font-family: "Archivo Black", sans-serif;
   text-align: left;
   letter-spacing: 2px;

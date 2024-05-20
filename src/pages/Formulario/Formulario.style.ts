@@ -119,7 +119,7 @@ export const CardHistory = styled(CardFormsElement)`
         min-width: auto;
     }
 
- > div > button {
+ > a > button {
         width: 100%;
     }
 }
@@ -127,7 +127,7 @@ export const CardHistory = styled(CardFormsElement)`
 @media(min-width: 768px) {
         width: 100%;
 
-  > div {
+  > a {
         display: flex;
         align-items: self-end;
         flex-grow: 1;
@@ -145,7 +145,7 @@ export const CardHistory = styled(CardFormsElement)`
         max-width: none;
         min-width: auto;
     }
-  > div {
+  > a {
         display: flex;
         align-items: self - end;
         flex-grow: 1;
