@@ -11,7 +11,6 @@ export const IntegrantesElement = styled.section`
  }
  @media(min-width:1200px){
         width: 80%;
-        margin: 50px auto 100px auto; 
  }
 `
 
@@ -40,3 +39,21 @@ export const CaixaIntegrantesElement = styled.article`
     width: 20%;   
  }
 `
+
+export const IntegrantesMain = styled.main`
+   display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 100px;
+`
+
+export const ContainerLinkGitHub = styled.section`
+   display: flex;
+   gap: 30px;
+   align-items: center;
+   > a > img {
+      width: 40px;
+   }
+   `;

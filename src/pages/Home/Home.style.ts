@@ -214,5 +214,4 @@ gap: 40px;
   justify-self: start;
 }
 }
-
 `

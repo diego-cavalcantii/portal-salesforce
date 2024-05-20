@@ -56,7 +56,7 @@ export const Layout = ({ children }: LayoutProps) => {
             </Link>
           </GuideElement>
           <AcessibilityElement>
-            <MoonElement onClick={() => themeToggler()}><img src={Icones.moon} alt="icone de lua "></img></MoonElement>
+            <MoonElement onClick={() => themeToggler()}><img src={Icones.moon} alt="icone de lua " /></MoonElement>
             <ChangeFont>
               <button onClick={() => increaseFontSize()}>A+</button>
               <button onClick={() => decreaseFontSize()}>A-</button>

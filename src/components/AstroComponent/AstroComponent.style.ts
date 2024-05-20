@@ -35,6 +35,19 @@ export const ContainerAstroElementLeft = styled(ContainerAstroElement)`
     left: 0;
 `;
 
+export const ContainerApi = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  padding: 10px;
+`;
+
+export const ContainerApiRight = styled(ContainerApi)`
+  right: 0;
+`;
+
+
 
 export const CloseAstroElement = styled.button`
   width: min-content;
@@ -45,7 +58,6 @@ export const CloseAstroElement = styled.button`
   font-weight: 800;
   font-size: 1.2rem;
   cursor: pointer;
-
   `
 
 export const ImageElement = styled.div`

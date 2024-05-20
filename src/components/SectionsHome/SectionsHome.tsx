@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AstroComponent } from '../../components/index'
 import { ContainerAstroElementLeft, ContainerAstroElementRight, CloseAstroElement } from "../../components/AstroComponent/AstroComponent.style";
 import { Astros, Icones, Logos, Photos } from "../../components/Imgs";
 import { BubleElement, ContainerElement, GridSection, GridWhatsCrm, WrappenElement } from "../../pages/Home/Home.style";
 import { ArticleElement, ArticleElementBall, BallCard, BigCard, BlueButton, CardElement, CardIndustry, SmallCard, WhiteBlueButton, TituloElement, TituloLeft, SubTituloElement, SublimeTituloElement, SmallSubTituloElement, LinksElement, SmallLinksElement, SessaoElement, ButtonAstro } from "../../styles/style";
+import { AstroData } from '../AstroComponent/AstroComponent';
+
 
 interface ShowBoxesState {
   box1: boolean;
@@ -14,11 +16,11 @@ interface ShowBoxesState {
 
 interface SectionsHomeProps {
   children: React.ReactNode;
-
 }
 
-
 export const SectionsHome = ({ children }: SectionsHomeProps) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [astro, setAstro] = useState<AstroData[]>([]);
   const [showText, setShowText] = useState<boolean>(false);
   const [showImages, setShowImages] = useState<ShowBoxesState>({
     box1: false,
@@ -27,7 +29,6 @@ export const SectionsHome = ({ children }: SectionsHomeProps) => {
     box4: false,
   });
 
-  const [isLoading, setIsLoading] = useState(false);
   const allBoxesVisible = showImages.box1 && showImages.box2 && showImages.box3 && showImages.box4;
 
   const handleButtonClick = () => {
@@ -47,6 +48,34 @@ export const SectionsHome = ({ children }: SectionsHomeProps) => {
       [boxKey]: false,
     }));
   };
+
+  const getAstro = async () => {
+    const url = "http://localhost:9090/astro";
+    setIsLoading(true);
+
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+
+      setAstro(data);
+
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    if (astro.length) {
+      return;
+    }
+
+    return () => {
+      getAstro();
+    };
+  }, []);
+
   return (
     <>
       <ButtonAstro onClick={handleButtonClick}>{!showText ? 'Ativar Astro' : 'Desativar Astro'}</ButtonAstro>
@@ -114,7 +143,7 @@ export const SectionsHome = ({ children }: SectionsHomeProps) => {
             showImages.box1 &&
             <ContainerAstroElementLeft>
               <CloseAstroElement onClick={() => handleCloseBox('box1')}>X</CloseAstroElement>
-              <AstroComponent filterId={1} />
+              <AstroComponent data={astro} filterId={1} />
             </ContainerAstroElementLeft>
           )}
         </SessaoElement>
@@ -156,7 +185,7 @@ export const SectionsHome = ({ children }: SectionsHomeProps) => {
             showImages.box2 &&
             <ContainerAstroElementRight>
               <CloseAstroElement onClick={() => handleCloseBox('box2')}>X</CloseAstroElement>
-              <AstroComponent filterId={2} />
+              <AstroComponent data={astro} filterId={2} />
             </ContainerAstroElementRight>
           )
           }
@@ -199,7 +228,7 @@ export const SectionsHome = ({ children }: SectionsHomeProps) => {
             showImages.box3 &&
             <ContainerAstroElementLeft>
               <CloseAstroElement onClick={() => handleCloseBox('box3')}>X</CloseAstroElement>
-              <AstroComponent filterId={3} />
+              <AstroComponent data={astro} filterId={3} />
             </ContainerAstroElementLeft>
           )}
         </SessaoElement>
@@ -301,7 +330,7 @@ export const SectionsHome = ({ children }: SectionsHomeProps) => {
             showImages.box4 &&
             <ContainerAstroElementRight>
               <CloseAstroElement onClick={() => handleCloseBox('box4')}>X</CloseAstroElement>
-              <AstroComponent filterId={4} />
+              <AstroComponent data={astro} filterId={4} />
             </ContainerAstroElementRight>
           )
           }

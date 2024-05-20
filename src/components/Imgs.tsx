@@ -61,6 +61,7 @@ import buttonForm from "../assets/print-formulario.png";
 import howUs from "../assets/how-us.jpg";
 import astroSalesforce from "../assets/astro-salesforce.png";
 import astroTrailblazer from "../assets/astro-trailblazer.png";
+import gitHub from "../assets/githubicon.svg"
 
 export const Icones = {
     user,
@@ -74,6 +75,8 @@ export const Icones = {
     guide,
     globe,
     lupa,
+    gitHub
+
 }
 
 export const Astros = {

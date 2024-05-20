@@ -1,40 +1,54 @@
+import { useContext, useState } from "react";
 import { Footer, Layout } from "../../components";
-import { Photos } from "../../components/Imgs";
+import { Icones, Photos } from "../../components/Imgs";
 import { FontBlack } from "../../styles/GlobalStyles";
-import { CaixaIntegrantesElement, IntegrantesElement } from "./Integrantes.style";
-import { TituloElement, SessaoElement, ArticleElement } from "../../styles/style";
+import { CaixaIntegrantesElement, ContainerLinkGitHub, IntegrantesElement, IntegrantesMain } from "./Integrantes.style";
+import { TituloElement } from "../../styles/style";
+
 
 export default function Integrantes() {
+
+
+
   return (
     <Layout>
-      <SessaoElement>
+      <IntegrantesMain>
         <div>
-          <TituloElement>MAVIDI-SOLUTIONS</TituloElement>
+          <ContainerLinkGitHub>
+            <TituloElement>MAVIDI-SOLUTIONS</TituloElement>
+            <a href="https://github.com/diego-cavalcantii/portal-salesforce" target="blank">
+              <img src={Icones.gitHub} alt="" />
+            </a>
+          </ContainerLinkGitHub>
           <p>Integrantes</p>
         </div>
-        <ArticleElement>
-          <IntegrantesElement>
-            <CaixaIntegrantesElement>
-              <img src={Photos.imgDiego} alt="Foto diego" />
-              <div>
-                <FontBlack>Diego Cavalcanti <br /> RM - 553351</FontBlack>
-              </div>
-            </CaixaIntegrantesElement>
-            <CaixaIntegrantesElement>
-              <img src={Photos.imgMateus} alt="Foto Mateus" />
-              <div>
-                <FontBlack>Mateus Galeazi <br /> RM - 553352</FontBlack>
-              </div>
-            </CaixaIntegrantesElement>
-            <CaixaIntegrantesElement>
-              <img src={Photos.imgVitor} alt="Foto Vitor" />
-              <div>
-                <FontBlack>Vitor de Melo <br /> RM - 553483</FontBlack>
-              </div>
-            </CaixaIntegrantesElement>
-          </IntegrantesElement>
-        </ArticleElement>
-      </SessaoElement>
+
+        <IntegrantesElement>
+          <CaixaIntegrantesElement>
+            <img src={Photos.imgDiego} alt="Foto diego" />
+            <div>
+              <FontBlack>Diego Cavalcanti <br /> RM - 553351</FontBlack>
+            </div>
+          </CaixaIntegrantesElement>
+          <CaixaIntegrantesElement>
+            <img src={Photos.imgMateus} alt="Foto Mateus" />
+            <div>
+              <FontBlack>Mateus Galeazi <br /> RM - 553352</FontBlack>
+            </div>
+          </CaixaIntegrantesElement>
+          <CaixaIntegrantesElement>
+            <img src={Photos.imgVitor} alt="Foto Vitor" />
+            <div>
+              <FontBlack>Vitor de Melo <br /> RM - 553483</FontBlack>
+            </div>
+          </CaixaIntegrantesElement>
+        </IntegrantesElement>
+        <ContainerLinkGitHub>
+          <a href="https://github.com/diego-cavalcantii/portal-salesforce" target="blank">
+            Link do GitHub
+          </a>
+        </ContainerLinkGitHub>
+      </IntegrantesMain>
       <Footer />
     </Layout>
   )
