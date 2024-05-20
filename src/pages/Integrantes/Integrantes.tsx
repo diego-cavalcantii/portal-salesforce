@@ -44,7 +44,7 @@ export default function Integrantes() {
         </IntegrantesElement>
         <ContainerLinkGitHub>
           <a href="https://github.com/diego-cavalcantii/portal-salesforce" target="blank">
-            Link do GitHub
+            Link do Repositorio do GitHub
           </a>
         </ContainerLinkGitHub>
       </IntegrantesMain>
