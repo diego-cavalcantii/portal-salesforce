@@ -44,7 +44,7 @@ import crm from "../assets/crm.png";
 import imgDiego from "../assets/diego.png";
 import imgMateus from "../assets/mateus.png";
 import imgVitor from "../assets/vitor.png";
-import bgAstro from "../assets/bg-astro.jpg";
+import bgAstro from "../assets/astro.png";
 import bgTrailblazers from "../assets/bg-trailblazer.jpg";
 import caracterSales from "../assets/caracters-sales.webp";
 import pageProd from "../assets/page-produtos.png";

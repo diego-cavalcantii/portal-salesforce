@@ -87,9 +87,8 @@ export const CardFormsElement = styled.div`
 }
 
 @media(min-width:375px) {
-  &.card-form {
     flex-direction: column;
-  }
+
 }
 
 @media(min-width:1200px) {
