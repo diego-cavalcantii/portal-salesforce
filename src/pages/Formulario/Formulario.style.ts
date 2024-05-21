@@ -154,3 +154,13 @@ export const CardHistory = styled(CardFormsElement)`
 }
 `;
 
+export const ContainerButtonForms = styled.div`
+display: flex;
+margin: 30px auto 0 auto;
+
+> button {
+  width: 100%;
+}
+
+`;
+

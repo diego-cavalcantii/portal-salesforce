@@ -1,3 +1,5 @@
+import { ContainerButtonForms } from "../../pages/Formulario/Formulario.style";
+import { BlueButton } from "../../styles/Button";
 import { FontBlack } from "../../styles/GlobalStyles";
 import { Icones } from "../Imgs";
 import { BoxLogin, CheckboxElement, FormElement, InputsElement } from "./Form.style";
@@ -61,6 +63,10 @@ export const Form = () => {
                     <input type="checkbox" name="termos" id="termos" />
                     <label htmlFor="Idioma">Estou de acordo com o Main Service Agreement</label>
                 </CheckboxElement>
+                <ContainerButtonForms>
+                    <BlueButton>Enviar</BlueButton>
+                </ContainerButtonForms>
+
 
             </section>
         </FormElement>
